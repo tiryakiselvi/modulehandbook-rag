@@ -1,6 +1,7 @@
 # Structure-aware Retrieval for LMU Module Handbooks
 
 **Seminar:** Suchmaschinen und Retrieval-Augmented Generation, LMU Munich
+
 **Authors:** Selvinaz Tiryaki and Salem Debebe
 
 ## Project motivation
