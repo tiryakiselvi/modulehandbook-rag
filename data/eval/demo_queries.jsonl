@@ -1,0 +1,8 @@
+{"id":"F01","query_type":"factual","query":"Welche Prüfungsform hat WP3 Information Retrieval?","relevant_modules":["WP3"],"relevant_sections":["Form der Modulprüfung"]}
+{"id":"F02","query_type":"factual","query":"Wer ist modulverantwortlich für P11 Informationsextraktion?","relevant_modules":["P11"],"relevant_sections":["Modulverantwortliche/r"]}
+{"id":"N01","query_type":"numerical","query":"Wie viele ECTS hat WP3 Information Retrieval?","relevant_modules":["WP3"],"relevant_sections":["Zugeordnete Modulteile"]}
+{"id":"N02","query_type":"semester","query":"In welchem Semester wird P8 empfohlen?","relevant_modules":["P8"],"relevant_sections":["Zeitpunkt im Studienverlauf"]}
+{"id":"C01","query_type":"content","query":"Welche Inhalte behandelt P11 Informationsextraktion?","relevant_modules":["P11"],"relevant_sections":["Inhalte"]}
+{"id":"C02","query_type":"content","query":"Welche Teilnahmevoraussetzungen hat P4?","relevant_modules":["P4"],"relevant_sections":["Teilnahmevoraussetzung"]}
+{"id":"B01","query_type":"broad-topic","query":"Welche Module behandeln Informationssuche?","relevant_modules":["P2","P5","P8","WP3"],"relevant_sections":["Inhalte"]}
+{"id":"B02","query_type":"broad-topic","query":"Welches Modul behandelt reguläre Sprachen und endliche Automaten?","relevant_modules":["P7"],"relevant_sections":["Inhalte"]}
