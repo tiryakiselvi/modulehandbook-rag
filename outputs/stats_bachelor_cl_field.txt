@@ -1,0 +1,18 @@
+Chunks: 362
+Detected modules: 17
+P1, P10, P11, P12, P13, P2, P3, P4, P5, P6, P7, P8, P9, WP1, WP2, WP3, WP4
+Sections: 56
+Art der Bewertung, Art des Moduls, Dauer, Englischer Modultitel, Form der
+Modulprüfung, Inhalte, Modulverantwortliche/r, Qualifikationsziele, Sonstige
+Informationen, Teilnahmevoraussetzung, Unterrichtssprache, Verwendbarkeit des
+Moduls, Voraussetzung für die Vergabe, Wahlpflichtregelungen, Zeitpunkt im
+Studienverlauf, Zugeordnete Modulteile, Zuordnung zum Studiengang, header, § 1
+Gegenstand des Studiengangs und Zweck der Bachelorprüfung, § 10 Bewertung der
+Modulprüfungen und Modulteilprüfungen, § 11 Bestehen, Nichtbestehen und
+Wiederholung der, § 11 Bestehen, Nichtbestehen und Wiederholung der
+Modulprüfungen und, § 12 Kontoauszüge, § 13 Grundlagen- und
+Orientierungsprüfung, § 14 Bachelorarbeit, § 15 Disputation, § 16 Mündliche
+Modulprüfungen und Modulteilprüfungen, § 17 Klausuren und sonstige schriftliche
+Aufsichtsarbeiten, § 18 Weitere Formen von Modulprüfungen und
+Modulteilprüfungen, § 19 Bestehen und Nichtbestehen der Bachelorprüfung
+Document types: examination_regulations, module_handbook

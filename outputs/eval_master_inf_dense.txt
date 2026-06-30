@@ -1,0 +1,43 @@
+        Evaluation: dense on
+data\processed\informatik_master_curr
+           ent_field.jsonl
++-----------------------------------+
+| Group       | Metric      | Value |
+|-------------+-------------+-------|
+| overall     | queries     |     9 |
+| overall     | precision@3 | 0.296 |
+| overall     | recall@3    | 0.685 |
+| overall     | mrr         | 0.537 |
+| overall     | ndcg@3      | 0.523 |
+| overall     | hit@1       | 0.333 |
+| numerical   | queries     |     2 |
+| numerical   | precision@3 | 0.167 |
+| numerical   | recall@3    | 0.500 |
+| numerical   | mrr         | 0.250 |
+| numerical   | ndcg@3      | 0.315 |
+| numerical   | hit@1       | 0.000 |
+| factual     | queries     |     3 |
+| factual     | precision@3 | 0.333 |
+| factual     | recall@3    | 0.833 |
+| factual     | mrr         | 0.833 |
+| factual     | ndcg@3      | 0.748 |
+| factual     | hit@1       | 0.667 |
+| semester    | queries     |     1 |
+| semester    | precision@3 | 0.333 |
+| semester    | recall@3    | 1.000 |
+| semester    | mrr         | 0.333 |
+| semester    | ndcg@3      | 0.500 |
+| semester    | hit@1       | 0.000 |
+| content     | queries     |     2 |
+| content     | precision@3 | 0.167 |
+| content     | recall@3    | 0.500 |
+| content     | mrr         | 0.250 |
+| content     | ndcg@3      | 0.315 |
+| content     | hit@1       | 0.000 |
+| broad-topic | queries     |     1 |
+| broad-topic | precision@3 | 0.667 |
+| broad-topic | recall@3    | 0.667 |
+| broad-topic | mrr         | 1.000 |
+| broad-topic | ndcg@3      | 0.704 |
+| broad-topic | hit@1       | 1.000 |
++-----------------------------------+

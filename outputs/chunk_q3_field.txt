@@ -1,0 +1,25 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=31.889 | WP3 | Information Retrieval | Abschnitt: Zeitpunkt im    |
+| Studienverlauf | Seite 33                                                   |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 6                         |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=19.112 | P3 | Sprachkurs | Abschnitt: Zeitpunkt im Studienverlauf |
+| | Seite 7                                                                   |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 1                         |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=19.112 | P11 | Informationsextraktion | Abschnitt: Zeitpunkt im   |
+| Studienverlauf | Seite 23                                                   |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 5                         |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=19.112 | P13 | Abschlussmodul | Abschnitt: Zeitpunkt im           |
+| Studienverlauf | Seite 27                                                   |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 6                         |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=18.913 | P5 | Symbolische Programmiersprache | Abschnitt:         |
+| Zeitpunkt im Studienverlauf | Seite 11                                      |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 3                         |
++-----------------------------------------------------------------------------+

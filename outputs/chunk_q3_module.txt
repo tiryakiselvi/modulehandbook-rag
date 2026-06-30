@@ -1,0 +1,57 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=15.072 | WP3 | Information Retrieval | Abschnitt: module | Seite  |
+| 33                                                                          |
+| Modul: WP3 Information Retrieval Englischer Modultitel WP3 Information      |
+| Retrieval Zuordnung zum Studiengang Bachelorstudiengang: Computerlinguistik |
+| Zugeordnete Modulteile Lehrform Veranstaltung (Wahlpflicht) Turnus          |
+| Pr�senzzeit Selbststudium ECTS Vorlesung WP 3.1 SoSe 45 h (3 SWS) 135 h     |
+| (6)�bung WP 3.2 SoSe 15 h (1 SWS) 75 h (3) Im Modul m�ssen insgesamt 9      |
+| ECTS-Punkte erworben werden. Die Pr�senzzeit betr�gt 4                      |
+| Semesterwochenstunden. Inklusive Selbststudium sind etwa 270 Stunden        |
+| aufzuwenden. Art de �                                                       |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=6.524 | WP4 | Angewandtes Programmieren in der Computerlinguistik |
+| | Abschnitt: module | Seite 35                                              |
+| Modul: WP4 Angewandtes Programmieren in der Computerlinguistik Englischer   |
+| Modultitel WP4 Applied Programming in Computational Linguistics Zuordnung   |
+| zum Studiengang Bachelorstudiengang: Computerlinguistik Zugeordnete         |
+| Modulteile Lehrform Veranstaltung (Wahlpflicht) Turnus Pr�senzzeit          |
+| Selbststudium ECTS Vorlesung WP 4.1 SoSe 45 h (3 SWS) 135 h (6)�bung WP 4.2 |
+| SoSe 15 h (1 SWS) 75 h (3) Im Modul m�ssen insgesamt 9 ECTS-Punkte erworben |
+| werden. Die Pr�senzzeit betr�gt 4 Semesterwochenstunden. Inklusiv �         |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=6.473 | P11 | Informationsextraktion | Abschnitt: module | Seite  |
+| 23                                                                          |
+| Modul: P11 Informationsextraktion Englischer Modultitel P11 Information     |
+| Extraction Zuordnung zum Studiengang Bachelorstudiengang:                   |
+| Computerlinguistik Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht)  |
+| Turnus Pr�senzzeit Selbststudium ECTS Seminar P 11.1 WiSe 30 h (2 SWS) 240  |
+| h 9 Vorlesung P 11.2 WiSe 30 h (2 SWS) 60 h 3 Im Modul m�ssen insgesamt 12  |
+| ECTS-Punkte erworben werden. Die Pr�senzzeit betr�gt 4                      |
+| Semesterwochenstunden. Inklusive Selbststudium sind 360 Stunden             |
+| aufzuwenden. Art des Modul �                                                |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=6.416 | P1 | Einf�hrung in die Programmierung | Abschnitt: module |
+| | Seite 3                                                                   |
+| Modul: P1 Einf�hrung in die Programmierung Englischer Modultitel P1         |
+| Introduction to Programming Zuordnung zum Studiengang Bachelorstudiengang:  |
+| Computerlinguistik Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht)  |
+| Turnus Pr�senzzeit Selbststudium ECTS Vorlesung P 1.1 WiSe 45 h (3 SWS) 135 |
+| h (6)�bung P 1.2 WiSe 30 h (2 SWS) 60 h (3) Im Modul m�ssen insgesamt 9     |
+| ECTS-Punkte erworben werden. Die Pr�senzzeit betr�gt 5                      |
+| Semesterwochenstunden. Inklusive Selbststudium sind etwa 270 Stunden        |
+| aufzuwende �                                                                |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=4.055 | P3 | Sprachkurs | Abschnitt: module | Seite 7             |
+| Modul: P3 Sprachkurs Englischer Modultitel P3 Language Course Zuordnung zum |
+| Studiengang Bachelorstudiengang: Computerlinguistik Zugeordnete Modulteile  |
+| Lehrform Veranstaltung (Pflicht) Turnus Pr�senzzeit Selbststudium ECTS�bung |
+| P 3 WiSe SoSe 30 h (2 SWS) 60 h (3) Im Modul m�ssen insgesamt 3 ECTS-Punkte |
+| erworben werden. Die Pr�senzzeit betr�gt 2 Semesterwochenstunden. Inklusive |
+| Selbststudium sind etwa 90 Stunden aufzuwenden. Art des Moduls Pflichtmodul |
+| Verwendbarkeit des Moduls in anderen Studieng �                             |
++-----------------------------------------------------------------------------+

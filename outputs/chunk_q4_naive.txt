@@ -1,0 +1,51 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=15.508 | Abschnitt: naive | Seite 27                              |
+| LUDWIG-MAXIMILIANS-UNIVERSIT�T M�NCHEN Modul: P13 Abschlussmodul Englischer |
+| Modultitel P13 Final Module Zuordnung zum Studiengang Bachelorstudiengang:  |
+| Computerlinguistik Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht)  |
+| Turnus Pr�senzzeit Selbststudium ECTS Bachelorarbeit P 13.1 SoSe, WiSe 0 h  |
+| 360 h 12 Disputation P 13.2 SoSe, WiSe 1 h 90 h 3 Im Modul m�ssen insgesamt |
+| 15 ECTS-Punkte erworben werden. Insgesamt sind etwa 450 Stunden             |
+| aufzuwenden. Art des Moduls Pflichtmodul Verwendbarkeit des �               |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=10.542 | Abschnitt: naive | Seite 2                               |
+| ngen und Korpusbearbeitung . . . . . . . . . . . . . 17 Modul: P9 Logik und |
+| modelltheoretische Semantik . . . . . . . . . . . . . . . . . . . . . . . . |
+| . . 19 Modul: P10 Statistische Methoden in der Sprachverarbeitung . . . . . |
+| . . . . . . . . . . . . . . 21 Modul: P11 Informationsextraktion . . . . .  |
+| . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 Modul: P12   |
+| Computerlinguistisches Arbeiten . . . . . . . . . . . . . . . . . . . . . . |
+| . . . . . . . 25 Modul: P13 Abschlussmodul . .  �                           |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=6.607 | Abschnitt: naive | Seite 37                               |
+| notung beliebig 3 6. Fachsemester  keine P P 12 Computerlinguistisches      |
+| Arbeiten SS (6.) P P 12.1 SS keine Kolloquium zu  Computerlinguistisches    |
+| Arbeiten Kolloquium 2 keine MTP Referat 30-45 Minuten bestanden/  nicht     |
+| bestanden beliebig 4 (6.) P P 12.2 SS keine Repetitorium zu                 |
+| Computerlinguistisches  Arbeiten Repetitorium 1 keine MTP 10 Thesenpapiere  |
+| je 1.000 - max.  1.500 Zeichen bestanden/  nicht  bestanden beliebig 2      |
+| keine P P 13 Abschlussmodul SS  (6.) P P 13.1 SS keine Bachelorarbeit Bach  |
+| �                                                                           |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=6.385 | Abschnitt: naive | Seite 14                               |
+| ergeben.    (8)  1 Die Bachelorarbeit ist fristgem�� in drei Exemplaren     |
+| beim Pr�fungsamt  abzuliefern; der Abgabezeitpunkt ist aktenkundig zu       |
+| machen.  2 Bei der Abgabe hat  der Pr�fling schriftlich zu versichern, dass |
+| er seine Arbeit selbstst�ndig verfasst und  keine anderen als die           |
+| angegebenen Quellen und Hilfsmittel benutzt hat.  3 Der  Pr�fungsausschuss  |
+| kann allgemein oder im Einzelfall verlangen, dass die  Bachelorarbeit       |
+| zus�tzlich in elektronischer Form abgegeben wird und hierf�r  technisch �   |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=6.334 | Abschnitt: naive | Seite 13                               |
+| echend.    � 14  Bachelorarbeit    (1) Die Bachelorarbeit ist eine          |
+| Modulteilpr�fung.    (2) Die Bachelorarbeit soll zeigen, dass die oder der  |
+| Studierende in der Lage ist,  innerhalb einer vorgegebenen Frist (Abs. 7)   |
+| ein Problem aus ihrem oder seinem  Fach selbst�ndig nach wissenschaftlichen |
+| Methoden zu bearbeiten.    (3)  1 Die Bachelorarbeit wird von einer nach �  |
+| 24 Abs. 3 Nr. 3 zur ersten oder zum  ersten Pr�fenden bestellten Person     |
+| betreut (Betreuerin oder Betreuer).  2 Soll die  Bachelorarbe �             |
++-----------------------------------------------------------------------------+

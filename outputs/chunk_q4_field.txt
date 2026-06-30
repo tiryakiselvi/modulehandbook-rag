@@ -1,0 +1,28 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=14.594 | P13 | Abschlussmodul | Abschnitt: Dauer | Seite 27       |
+| Dauer Die Bachelorarbeit erstreckt sich�ber einen Zeitraum von 10 Wochen,   |
+| die Disputation schlie�t sich an die Bachelorarbeit an.                     |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=13.014 | P13 | Abschlussmodul | Abschnitt: Form der Modulpr�fung  |
+| | Seite 27                                                                  |
+| Form der Modulpr�fung Bachelorarbeit (ca. 80 000 Zeichen) und Disputation   |
+| (10-20 Minuten).                                                            |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=11.580 | P13 | Abschlussmodul | Abschnitt: Zeitpunkt im           |
+| Studienverlauf | Seite 27                                                   |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 6                         |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=11.556 | P13 | Abschlussmodul | Abschnitt: header | Seite 27      |
+| Modul: P13 Abschlussmodul                                                   |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=10.704 | P13 | Abschlussmodul | Abschnitt: Zugeordnete Modulteile |
+| | Seite 27                                                                  |
+| Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht) Turnus Pr�senzzeit  |
+| Selbststudium ECTS Bachelorarbeit P 13.1 SoSe, WiSe 0 h 360 h 12            |
+| Disputation P 13.2 SoSe, WiSe 1 h 90 h 3 Im Modul m�ssen insgesamt 15       |
+| ECTS-Punkte erworben werden. Insgesamt sind etwa 450 Stunden aufzuwenden.   |
++-----------------------------------------------------------------------------+

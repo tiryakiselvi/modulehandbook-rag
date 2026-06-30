@@ -24,6 +24,7 @@ class Chunk:
     module_code: str | None = None
     module_title: str | None = None
     section: str | None = None
+    document_type: str | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

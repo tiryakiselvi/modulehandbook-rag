@@ -1,0 +1,20 @@
+Chunks: 151
+Detected modules: 15
+P1, P2, P3, P4, P5, P6, P7, P8, PB, WP1, WP2, WP3, WP4, WP5, WP6
+Sections: 52
+Dauer, Form der Modulprüfung, Inhalte, Sonstige Informationen,
+Unterrichtssprache, Verwendbarkeit des Moduls, Voraussetzung für die Vergabe,
+Wahlpflichtregelungen, Zugeordnete Modulteile, document, header, § 1 Die
+Prüfungs- und Studienordnung der Ludwig-Maximilians-Universität München für, §
+1 Gegenstand des Studiengangs und Zweck der Masterprüfung, § 10 Bewertung der
+Modulprüfungen und Modulteilprüfungen, § 11 Bestehen, Nichtbestehen und
+Wiederholung der, § 11 Bestehen, Nichtbestehen und Wiederholung der
+Modulprüfungen und, § 12 Kontoauszüge, § 14 Masterarbeit, § 15 Disputation, §
+16 Mündliche Modulprüfungen und Modulteilprüfungen, § 17 Klausuren und sonstige
+schriftliche Aufsichtsarbeiten, § 18 Weitere Formen von Modulprüfungen und
+Modulteilprüfungen, § 19 Bestehen und Nichtbestehen der Masterprüfung, § 2 (1)
+Diese Satzung tritt mit Wirkung vom 1. Oktober 2020 in Kraft., § 2 Akademischer
+Grad, § 2 beurkundet., § 20 Bescheid und Bescheinigung bei Nichtbestehen, § 21
+Bildung der Endnote, § 22 Master-Urkunde, Master Diploma, Master-Zeugnis,
+Master Certificate,, § 23 Prüfungsausschuss und Prüfungsamt
+Document types: examination_regulations, module_handbook, study_plan

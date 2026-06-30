@@ -1,0 +1,43 @@
+         Evaluation: bm25 on
+data\processed\cl_bachelor_current_fi
+              eld.jsonl
+┌─────────────┬─────────────┬───────┐
+│ Group       │ Metric      │ Value │
+├─────────────┼─────────────┼───────┤
+│ overall     │ queries     │     8 │
+│ overall     │ precision@3 │ 0.250 │
+│ overall     │ recall@3    │ 0.750 │
+│ overall     │ mrr         │ 0.688 │
+│ overall     │ ndcg@3      │ 0.704 │
+│ overall     │ hit@1       │ 0.625 │
+│ factual     │ queries     │     2 │
+│ factual     │ precision@3 │ 0.333 │
+│ factual     │ recall@3    │ 1.000 │
+│ factual     │ mrr         │ 1.000 │
+│ factual     │ ndcg@3      │ 1.000 │
+│ factual     │ hit@1       │ 1.000 │
+│ numerical   │ queries     │     1 │
+│ numerical   │ precision@3 │ 0.333 │
+│ numerical   │ recall@3    │ 1.000 │
+│ numerical   │ mrr         │ 0.500 │
+│ numerical   │ ndcg@3      │ 0.631 │
+│ numerical   │ hit@1       │ 0.000 │
+│ semester    │ queries     │     1 │
+│ semester    │ precision@3 │ 0.333 │
+│ semester    │ recall@3    │ 1.000 │
+│ semester    │ mrr         │ 1.000 │
+│ semester    │ ndcg@3      │ 1.000 │
+│ semester    │ hit@1       │ 1.000 │
+│ content     │ queries     │     2 │
+│ content     │ precision@3 │ 0.167 │
+│ content     │ recall@3    │ 0.500 │
+│ content     │ mrr         │ 0.500 │
+│ content     │ ndcg@3      │ 0.500 │
+│ content     │ hit@1       │ 0.500 │
+│ broad-topic │ queries     │     2 │
+│ broad-topic │ precision@3 │ 0.167 │
+│ broad-topic │ recall@3    │ 0.500 │
+│ broad-topic │ mrr         │ 0.500 │
+│ broad-topic │ ndcg@3      │ 0.500 │
+│ broad-topic │ hit@1       │ 0.500 │
+└─────────────┴─────────────┴───────┘

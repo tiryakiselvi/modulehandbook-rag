@@ -1,0 +1,52 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=15.358 | Abschnitt: naive | Seite 23                              |
+| LUDWIG-MAXIMILIANS-UNIVERSIT�T M�NCHEN Modul: P11 Informationsextraktion    |
+| Englischer Modultitel P11 Information Extraction Zuordnung zum Studiengang  |
+| Bachelorstudiengang: Computerlinguistik Zugeordnete Modulteile Lehrform     |
+| Veranstaltung (Pflicht) Turnus Pr�senzzeit Selbststudium ECTS Seminar P     |
+| 11.1 WiSe 30 h (2 SWS) 240 h 9 Vorlesung P 11.2 WiSe 30 h (2 SWS) 60 h 3 Im |
+| Modul m�ssen insgesamt 12 ECTS-Punkte erworben werden. Die Pr�senzzeit      |
+| betr�gt 4 Semesterwochenstunden. Inklusive Selbststudium sind �             |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=9.559 | Abschnitt: naive | Seite 2                                |
+| ngen und Korpusbearbeitung . . . . . . . . . . . . . 17 Modul: P9 Logik und |
+| modelltheoretische Semantik . . . . . . . . . . . . . . . . . . . . . . . . |
+| . . 19 Modul: P10 Statistische Methoden in der Sprachverarbeitung . . . . . |
+| . . . . . . . . . . . . . . 21 Modul: P11 Informationsextraktion . . . . .  |
+| . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 Modul: P12   |
+| Computerlinguistisches Arbeiten . . . . . . . . . . . . . . . . . . . . . . |
+| . . . . . . . 25 Modul: P13 Abschlussmodul . .  �                           |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=7.550 | Abschnitt: naive | Seite 27                               |
+| LUDWIG-MAXIMILIANS-UNIVERSIT�T M�NCHEN Modul: P13 Abschlussmodul Englischer |
+| Modultitel P13 Final Module Zuordnung zum Studiengang Bachelorstudiengang:  |
+| Computerlinguistik Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht)  |
+| Turnus Pr�senzzeit Selbststudium ECTS Bachelorarbeit P 13.1 SoSe, WiSe 0 h  |
+| 360 h 12 Disputation P 13.2 SoSe, WiSe 1 h 90 h 3 Im Modul m�ssen insgesamt |
+| 15 ECTS-Punkte erworben werden. Insgesamt sind etwa 450 Stunden             |
+| aufzuwenden. Art des Moduls Pflichtmodul Verwendbarkeit des �               |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=7.474 | Abschnitt: naive | Seite 16                               |
+| szugehen.  9 Die  Verminderung der Zahl der Pr�fungsaufgaben darf sich      |
+| nicht zum Nachteil eines  Pr�flings auswirken.    (4)  1 Schriftliche       |
+| Modulpr�fungen und Modulteilpr�fungen nach Abs. 3 Satz 1, die aus           |
+| Einfachauswahlaufgaben (genau einer von insgesamt n Antwortvorschl�gen ist  |
+| richtig � �1 aus n�) bestehen, gelten als bestanden, wenn    1. der         |
+| Pr�fling insgesamt mindestens 60 Prozent der gestellten Pr�fungsfragen      |
+| zutreffend beantwortet hat oder  2. der Pr�fling insgesamt mindestens 50    |
+| Pro �                                                                       |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=6.905 | Abschnitt: naive | Seite 6                                |
+| - 6 -    (2)  1 Die Regelstudienzeit betr�gt einschlie�lich der Zeit f�r    |
+| die Anfertigung der  Bachelorarbeit sechs Semester.  2 Insgesamt sind       |
+| h�chstens 58  Semesterwochenstunden (SWS) erforderlich.    � 6              |
+| ECTS-Punkte, Nebenfach    (1)  1 Im Rahmen dieses Bachelorstudiengangs sind |
+| insgesamt 180 Punkte nach dem  European Credit Transfer System              |
+| (ECTS-Punkte) zu erwerben, und zwar    1. 120 ECTS-Punkte im Hauptfach und  |
+| 2. 60 ECTS-Punkte in einem Nebenfach gem�� Abs. 3.    2 ECTS-Punkte sind    |
+| ein q �                                                                     |
++-----------------------------------------------------------------------------+

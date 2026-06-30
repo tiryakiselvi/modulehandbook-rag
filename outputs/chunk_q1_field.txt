@@ -1,0 +1,31 @@
+┌───────────────────────────────── Treffer 1 ─────────────────────────────────┐
+│ [1] Score=19.885 | WP3 | Information Retrieval | Abschnitt: Voraussetzung   │
+│ für die Vergabe | Seite 33                                                  │
+│ Voraussetzung für die Vergabe von ECTS-Punkten Die ECTS-Punkte werden       │
+│ vergeben bei Bestehen der dem Modul zugeordneten Modulprüfung.              │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 2 ─────────────────────────────────┐
+│ [2] Score=19.032 | WP3 | Information Retrieval | Abschnitt: Zugeordnete     │
+│ Modulteile | Seite 33                                                       │
+│ Zugeordnete Modulteile Lehrform Veranstaltung (Wahlpflicht) Turnus          │
+│ Präsenzzeit Selbststudium ECTS Vorlesung WP 3.1 SoSe 45 h (3 SWS) 135 h     │
+│ (6)Übung WP 3.2 SoSe 15 h (1 SWS) 75 h (3) Im Modul müssen insgesamt 9      │
+│ ECTS-Punkte erworben werden. Die Präsenzzeit beträgt 4                      │
+│ Semesterwochenstunden. Inklusive Selbststudium sind etwa 270 Stunden        │
+│ aufzuwenden.                                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 3 ─────────────────────────────────┐
+│ [3] Score=16.669 | WP3 | Information Retrieval | Abschnitt: header | Seite  │
+│ 33                                                                          │
+│ Modul: WP3 Information Retrieval                                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 4 ─────────────────────────────────┐
+│ [4] Score=16.387 | WP3 | Information Retrieval | Abschnitt: Englischer      │
+│ Modultitel | Seite 33                                                       │
+│ Englischer Modultitel WP3 Information Retrieval                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 5 ─────────────────────────────────┐
+│ [5] Score=14.109 | WP3 | Information Retrieval | Abschnitt:                 │
+│ Teilnahmevoraussetzung | Seite 33                                           │
+│ Teilnahmevoraussetzung keine                                                │
+└─────────────────────────────────────────────────────────────────────────────┘

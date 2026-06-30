@@ -1,0 +1,59 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=17.484 | P1 | Einf�hrung in die Programmierung | Abschnitt:       |
+| module | Seite 3                                                            |
+| Modul: P1 Einf�hrung in die Programmierung Englischer Modultitel P1         |
+| Introduction to Programming Zuordnung zum Studiengang Bachelorstudiengang:  |
+| Computerlinguistik Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht)  |
+| Turnus Pr�senzzeit Selbststudium ECTS Vorlesung P 1.1 WiSe 45 h (3 SWS) 135 |
+| h (6)�bung P 1.2 WiSe 30 h (2 SWS) 60 h (3) Im Modul m�ssen insgesamt 9     |
+| ECTS-Punkte erworben werden. Die Pr�senzzeit betr�gt 5                      |
+| Semesterwochenstunden. Inklusive Selbststudium sind etwa 270 Stunden        |
+| aufzuwende �                                                                |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=9.175 | P2 | Einf�hrung in die Computerlinguistik | Abschnitt:    |
+| module | Seite 5                                                            |
+| Modul: P2 Einf�hrung in die Computerlinguistik Englischer Modultitel P2     |
+| Introduction to Computational Linguistics Zuordnung zum Studiengang         |
+| Bachelorstudiengang: Computerlinguistik Zugeordnete Modulteile Lehrform     |
+| Veranstaltung (Pflicht) Turnus Pr�senzzeit Selbststudium ECTS Vorlesung P   |
+| 2.1 WiSe 45 h (3 SWS) 45 h (3)�bung P 2.2 WiSe 15 h (1 SWS) 75 h (3) Im     |
+| Modul m�ssen insgesamt 6 ECTS-Punkte erworben werden. Die Pr�senzzeit       |
+| betr�gt 4 Semesterwochenstunden. Inklusive Selbststudium sind etwa 180 S �  |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=8.868 | P10 | Statistische Methoden in der Sprachverarbeitung |   |
+| Abschnitt: module | Seite 21                                                |
+| Modul: P10 Statistische Methoden in der Sprachverarbeitung Englischer       |
+| Modultitel P10 Statistical Methods in Computational Linguistics Zuordnung   |
+| zum Studiengang Bachelorstudiengang: Computerlinguistik Zugeordnete         |
+| Modulteile Lehrform Veranstaltung (Pflicht) Turnus Pr�senzzeit              |
+| Selbststudium ECTS Vorlesung P 10.1 WiSe 30 h (2 SWS) 60 h 3�bung P 10.2    |
+| WiSe 30 h (2 SWS) 60 h 3 Im Modul m�ssen insgesamt 6 ECTS-Punkte erworben   |
+| werden. Die Pr�senzzeit betr�gt 4 Semesterwochenstunden. Inklusive          |
+| Selbststudi �                                                               |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=8.759 | P5 | Symbolische Programmiersprache | Abschnitt: module | |
+| Seite 11                                                                    |
+| Modul: P5 Symbolische Programmiersprache Englischer Modultitel P5 Symbolic  |
+| Programming Zuordnung zum Studiengang Bachelorstudiengang:                  |
+| Computerlinguistik Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht)  |
+| Turnus Pr�senzzeit Selbststudium ECTS Vorlesung P 5.1 WiSe 30 h (2 SWS) 60  |
+| h 3�bung P 5.2 WiSe 30 h (2 SWS) 60 h 3 Im Modul m�ssen insgesamt 6         |
+| ECTS-Punkte erworben werden. Die Pr�senzzeit betr�gt 4                      |
+| Semesterwochenstunden. Inklusive Selbststudium sind etwa 180 Stunden        |
+| aufzuwenden. Art des Mod �                                                  |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=8.544 | P4 | Mathematische Grundlagen der Computerlinguistik |    |
+| Abschnitt: module | Seite 9                                                 |
+| Modul: P4 Mathematische Grundlagen der Computerlinguistik Englischer        |
+| Modultitel P4 Mathematical Methods in Computational Linguistics Zuordnung   |
+| zum Studiengang Bachelorstudiengang: Computerlinguistik Zugeordnete         |
+| Modulteile Lehrform Veranstaltung (Pflicht) Turnus Pr�senzzeit              |
+| Selbststudium ECTS Vorlesung P 4.1 SoSe 45 h (3 SWS) 135 h (6)�bung P 4.2   |
+| SoSe 30 h (2 SWS) 150 h (6) Im Modul m�ssen insgesamt 12 ECTS-Punkte        |
+| erworben werden. Die Pr�senzzeit betr�gt 5 Semesterwochenstunden. Inklusive |
+| Selbsts �                                                                   |
++-----------------------------------------------------------------------------+

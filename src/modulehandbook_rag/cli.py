@@ -45,6 +45,7 @@ def stats(
     chunk_list = read_jsonl(chunks)
     modules = sorted({c.module_code for c in chunk_list if c.module_code})
     sections = sorted({c.section for c in chunk_list if c.section})
+    document_types = sorted({c.document_type for c in chunk_list if c.document_type})
     console.print(f"Chunks: {len(chunk_list)}")
     console.print(f"Detected modules: {len(modules)}")
     if modules:
@@ -52,6 +53,7 @@ def stats(
     console.print(f"Sections: {len(sections)}")
     if sections:
         console.print(", ".join(sections[:30]))
+    console.print("Document types: " + (", ".join(document_types) if document_types else "none"))
 
 
 @app.command()

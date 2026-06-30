@@ -1,0 +1,56 @@
+┌───────────────────────────────── Treffer 1 ─────────────────────────────────┐
+│ [1] Score=16.057 | P12 | Computerlinguistisches Arbeiten | Abschnitt:       │
+│ Inhalte | Seite 25                                                          │
+│ Inhalte Nach einer Anleitung zu Beginn des Kurses berichten die             │
+│ Teilnehmenden im Kolloquiumüber ihre laufenden Bachelorarbeiten, wobei auch │
+│ die dahinterstehenden Projekte und größeren Fragestellungen, aus denen die  │
+│ Themen entstanden sind, darzustellen sind. Die anderen Teilnehmenden        │
+│ diskutieren die Ergebnisse und schreiben Protokolle zu den Vorträgen. Im    │
+│ Repetitorium werden die Protokolle besprochen. Es werden Tools und Tipps    │
+│ zum Verfassen von Abschlussarbeiten behandelt. Gegen Semesterende beri …    │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 2 ─────────────────────────────────┐
+│ [2] Score=14.114 | P7 | Formale Sprachen | Abschnitt: Inhalte | Seite 15    │
+│ Inhalte Die Vorlesung gliedert sich nach einer Einleitung in zwei           │
+│ Hauptteile, von denen der erste den regulären Sprachen und endlichen        │
+│ Automaten, und der zweite den kontextfreien Sprachen, Kellerautomaten und   │
+│ wichtigen Parsingverfahren gewidmet ist. In Teil eins werden reguläre       │
+│ Sprachen und Ausdrücke, endliche Automaten, Determinisierung und            │
+│ Minimalisierung endlicher Automaten, Abschlusseigenschaften regulärer       │
+│ Sprachen, Kleene-Theorem und Pumping-Theorem behandelt. Nach einem          │
+│ kurzenÜberblicküber …                                                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 3 ─────────────────────────────────┐
+│ [3] Score=13.016 | WP1 | Computergestützte Morphologie und Lexikographie |  │
+│ Abschnitt: Inhalte | Seite 29                                               │
+│ Inhalte Der Kurs behandelt die Grundlagen der Morphologie sowie der         │
+│ lexikalischen und distributionellen Semantik in der Computerlinguistik.     │
+│ Zunächst werden morphologische und lexikographische Grundbegriffe           │
+│ vermittelt, wie die Prozesse der Flexion und Wortbildung sowie deren        │
+│ Modellierung mittels computerlinguistischer Formalismen. Der zweite Teil    │
+│ widmet sich lexikalischen Ressourcen, datengesteuerten Wortrepräsentationen │
+│ und der Analyse lexikalisch-semantischer Beziehungen. In den                │
+│ begleitendenÜbu …                                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 4 ─────────────────────────────────┐
+│ [4] Score=12.972 | P11 | Informationsextraktion | Abschnitt: Inhalte |      │
+│ Seite 23                                                                    │
+│ Inhalte Das Modul gibt eine Einführung in die Informationsextraktion (IE),  │
+│ also die automatische Extraktion von Information aus Volltexten. Die        │
+│ Anwendungen erstrecken sich von der Unterstützung von InternetSuchmaschinen │
+│ bis zum automatisierten Aufbau von Fachdatenbanken. Die Methoden reichen    │
+│ von der Analyse natürlicher Spracheüber automatische Termerkennung bis zu   │
+│ automatischen Lernverfahren, wobei symbolische, statistische und hybride    │
+│ Methoden zum Einsatz kommen. Komplexe Informationsstrukturen …              │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 5 ─────────────────────────────────┐
+│ [5] Score=12.242 | WP3 | Information Retrieval | Abschnitt: Inhalte | Seite │
+│ 33                                                                          │
+│ Inhalte Dieses Modul bietet einen Einblick in die wichtigsten Themen des    │
+│ Information Retrievals und der Suchmaschinen. Die Grundlagen der            │
+│ wesentlichen Modelle des Information Retrievals werden vermittelt. Darüber  │
+│ hinaus werden Techniken und Verfahren wie Termgewichtung,Ähnlichkeitsmaße,  │
+│ Boolesches Retrieval, Vektorraummodelle, statistische Modelle, neuronale    │
+│ Modelle, Ranking-Mechanismen, Evaluierungsprinzipien, Benutzerinteraktion,  │
+│ Feedbackmechanismen, Abfrageerweiterung, Relevanzfeedback, Index …          │
+└─────────────────────────────────────────────────────────────────────────────┘

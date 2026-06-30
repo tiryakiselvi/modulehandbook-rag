@@ -1,0 +1,25 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=35.110 | P1 | Einf�hrung in die Programmierung | Abschnitt:       |
+| Zeitpunkt im Studienverlauf | Seite 3                                       |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 1                         |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=26.500 | P2 | Einf�hrung in die Computerlinguistik | Abschnitt:   |
+| Zeitpunkt im Studienverlauf | Seite 5                                       |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 1                         |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=22.702 | P10 | Statistische Methoden in der Sprachverarbeitung |  |
+| Abschnitt: Zeitpunkt im Studienverlauf | Seite 21                           |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 5                         |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=22.702 | WP4 | Angewandtes Programmieren in der                   |
+| Computerlinguistik | Abschnitt: Zeitpunkt im Studienverlauf | Seite 35      |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 6                         |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=22.321 | P3 | Sprachkurs | Abschnitt: Zeitpunkt im Studienverlauf |
+| | Seite 7                                                                   |
+| Zeitpunkt im Studienverlauf Empfohlenes Semester: 1                         |
++-----------------------------------------------------------------------------+

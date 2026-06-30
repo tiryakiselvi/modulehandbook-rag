@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import csv
 import json
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from math import log2
 from typing import Callable
@@ -15,6 +15,7 @@ class EvalQuery:
     query: str
     relevant_modules: set[str]
     relevant_sections: set[str]
+    relevant_documents: set[str] = field(default_factory=set)
     query_id: str = ""
     query_type: str = "unspecified"
 
@@ -22,14 +23,18 @@ class EvalQuery:
     def from_dict(data: dict) -> "EvalQuery":
         modules = data.get("relevant_modules") or data.get("module") or []
         sections = data.get("relevant_sections") or data.get("section") or []
+        documents = data.get("relevant_documents") or data.get("document") or []
         if isinstance(modules, str):
             modules = [x.strip() for x in modules.split(";") if x.strip()]
         if isinstance(sections, str):
             sections = [x.strip() for x in sections.split(";") if x.strip()]
+        if isinstance(documents, str):
+            documents = [x.strip() for x in documents.split(";") if x.strip()]
         return EvalQuery(
             query=data["query"],
             relevant_modules={m.upper() for m in modules},
             relevant_sections={s for s in sections},
+            relevant_documents={Path(item).name for item in documents},
             query_id=str(data.get("id", data.get("query_id", ""))),
             query_type=str(data.get("query_type", "unspecified")),
         )
@@ -55,10 +60,11 @@ def load_eval_queries(path: Path) -> list[EvalQuery]:
 
 def is_relevant(chunk: Chunk, query: EvalQuery, require_section: bool = False) -> bool:
     module_ok = not query.relevant_modules or (chunk.module_code or "").upper() in query.relevant_modules
+    document_ok = not query.relevant_documents or Path(chunk.source_path).name in query.relevant_documents
     if not require_section or not query.relevant_sections:
-        return module_ok
+        return module_ok and document_ok
     section_ok = (chunk.section or "") in query.relevant_sections
-    return module_ok and section_ok
+    return module_ok and document_ok and section_ok
 
 
 def precision_at_k(retrieved: list[str], relevant: set[str], k: int) -> float:
@@ -110,15 +116,19 @@ def evaluate_results(
     for q in eval_queries:
         results = search_fn(q.query, k)
         if require_section:
-            retrieved_ids = [r.chunk.chunk_id for r in results]
+            retrieved_ids = list(dict.fromkeys(r.chunk.chunk_id for r in results))
             relevant_ids = {c.chunk_id for c in corpus_chunks if is_relevant(c, q, require_section=True)}
             if not relevant_ids:
                 raise ValueError(f"No gold chunk exists for strict query '{q.query}'. Check module/section labels.")
         else:
             # Relaxed retrieval means 'correct module', not 'every field of that
             # module'.  This avoids impossible recall scores for field chunks.
-            retrieved_ids = list(dict.fromkeys((r.chunk.module_code or r.chunk.chunk_id).upper() for r in results))
-            relevant_ids = q.relevant_modules
+            retrieved_ids = list(
+                dict.fromkeys(
+                    (r.chunk.module_code or Path(r.chunk.source_path).name).upper() for r in results
+                )
+            )
+            relevant_ids = q.relevant_modules or {name.upper() for name in q.relevant_documents}
         # If no relevant item is retrieved, metrics below become 0.
         precision_scores.append(precision_at_k(retrieved_ids, relevant_ids, k))
         recall_scores.append(recall_at_k(retrieved_ids, relevant_ids, k))

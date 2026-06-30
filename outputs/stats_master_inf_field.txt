@@ -1,0 +1,20 @@
+Chunks: 584
+Detected modules: 33
+P1, P2, P3, P4, WP1, WP10, WP11, WP12, WP13, WP14, WP15, WP16, WP17, WP18,
+WP19, WP2, WP20, WP21, WP22, WP23, WP24, WP25, WP26, WP27, WP28, WP29, WP3,
+WP4, WP5, WP6, WP7, WP8, WP9
+Sections: 56
+Art der Bewertung, Art des Moduls, Dauer, Form der Modulprüfung, Inhalte,
+Modulverantwortliche/r, Qualifikationsziele, Sonstige Informationen,
+Unterrichtssprache, Verwendbarkeit des Moduls, Voraussetzung für die Vergabe,
+Wahlpflichtregelungen, Zeitpunkt im Studienverlauf, Zugeordnete Modulteile,
+Zuordnung zum Studiengang, document, header, § 1 Gegenstand des Studiengangs
+und Zweck der Masterprüfung, § 10 Bewertung der Modulprüfungen und
+Modulteilprüfungen, § 11 Bestehen, Nichtbestehen und Wiederholung der, § 11
+Bestehen, Nichtbestehen und Wiederholung der Modulprüfungen und, § 12
+Kontoauszüge, § 14 Masterarbeit, § 15 Disputation, § 16 Mündliche
+Modulprüfungen und Modulteilprüfungen, § 17 Klausuren und sonstige schriftliche
+Aufsichtsarbeiten, § 18 Weitere Formen von Modulprüfungen und
+Modulteilprüfungen, § 19 Bestehen und Nichtbestehen der Masterprüfung, § 2
+Akademischer Grad, § 2 beurkundet.
+Document types: admission_information, examination_regulations, module_handbook

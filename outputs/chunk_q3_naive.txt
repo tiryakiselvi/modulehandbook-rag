@@ -1,0 +1,46 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=21.958 | Abschnitt: naive | Seite 33                              |
+| Fakult�t f�r Mathematik, Informatik und Statistik der TU M�nchen            |
+| exportiert. Wahlpflichtregelungen Aus den Wahlpflichtmodulen WP3 und WP4    |
+| ist ein Wahlpflichtmodul zu w�hlen. Teilnahmevoraussetzung keine Zeitpunkt  |
+| im Studienverlauf Empfohlenes Semester: 6 Dauer Das Modul erstreckt         |
+| sich�ber das ganze Semester. Inhalte Dieses Modul bietet einen Einblick in  |
+| die wichtigsten Themen des Information Retrievals und der Suchmaschinen.    |
+| Die Grundlagen der wesentlichen Modelle des Information Retrievals werd �   |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=15.283 | Abschnitt: naive | Seite 2                               |
+| : WP3 Information Retrieval . . . . . . . . . . . . . . . . . . . . . . . . |
+| . . . . . . . . . . . 33 Modul: WP4 Angewandtes Programmieren in der        |
+| Computerlinguistik . . . . . . . . . . . . . . . 35 2                       |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=14.518 | Abschnitt: naive | Seite 33                              |
+| LUDWIG-MAXIMILIANS-UNIVERSIT�T M�NCHEN Modul: WP3 Information Retrieval     |
+| Englischer Modultitel WP3 Information Retrieval Zuordnung zum Studiengang   |
+| Bachelorstudiengang: Computerlinguistik Zugeordnete Modulteile Lehrform     |
+| Veranstaltung (Wahlpflicht) Turnus Pr�senzzeit Selbststudium ECTS Vorlesung |
+| WP 3.1 SoSe 45 h (3 SWS) 135 h (6)�bung WP 3.2 SoSe 15 h (1 SWS) 75 h (3)   |
+| Im Modul m�ssen insgesamt 9 ECTS-Punkte erworben werden. Die Pr�senzzeit    |
+| betr�gt 4 Semesterwochenstunden. Inklusive Selbststudium si �               |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=11.929 | Abschnitt: naive | Seite 23                              |
+| LUDWIG-MAXIMILIANS-UNIVERSIT�T M�NCHEN Modul: P11 Informationsextraktion    |
+| Englischer Modultitel P11 Information Extraction Zuordnung zum Studiengang  |
+| Bachelorstudiengang: Computerlinguistik Zugeordnete Modulteile Lehrform     |
+| Veranstaltung (Pflicht) Turnus Pr�senzzeit Selbststudium ECTS Seminar P     |
+| 11.1 WiSe 30 h (2 SWS) 240 h 9 Vorlesung P 11.2 WiSe 30 h (2 SWS) 60 h 3 Im |
+| Modul m�ssen insgesamt 12 ECTS-Punkte erworben werden. Die Pr�senzzeit      |
+| betr�gt 4 Semesterwochenstunden. Inklusive Selbststudium sind �             |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=11.802 | Abschnitt: naive | Seite 2                               |
+| ngen und Korpusbearbeitung . . . . . . . . . . . . . 17 Modul: P9 Logik und |
+| modelltheoretische Semantik . . . . . . . . . . . . . . . . . . . . . . . . |
+| . . 19 Modul: P10 Statistische Methoden in der Sprachverarbeitung . . . . . |
+| . . . . . . . . . . . . . . 21 Modul: P11 Informationsextraktion . . . . .  |
+| . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23 Modul: P12   |
+| Computerlinguistisches Arbeiten . . . . . . . . . . . . . . . . . . . . . . |
+| . . . . . . . 25 Modul: P13 Abschlussmodul . .  �                           |
++-----------------------------------------------------------------------------+

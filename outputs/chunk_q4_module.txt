@@ -1,0 +1,57 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=14.792 | P13 | Abschlussmodul | Abschnitt: module | Seite 27      |
+| Modul: P13 Abschlussmodul Englischer Modultitel P13 Final Module Zuordnung  |
+| zum Studiengang Bachelorstudiengang: Computerlinguistik Zugeordnete         |
+| Modulteile Lehrform Veranstaltung (Pflicht) Turnus Pr�senzzeit              |
+| Selbststudium ECTS Bachelorarbeit P 13.1 SoSe, WiSe 0 h 360 h 12            |
+| Disputation P 13.2 SoSe, WiSe 1 h 90 h 3 Im Modul m�ssen insgesamt 15       |
+| ECTS-Punkte erworben werden. Insgesamt sind etwa 450 Stunden aufzuwenden.   |
+| Art des Moduls Pflichtmodul Verwendbarkeit des Moduls in anderen            |
+| Studieng�ngen Das Mo �                                                      |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=5.779 | Abschnitt: document | Seite 1                             |
+| Pr�fungs- und Studienordnung  der Ludwig-Maximilians-Universit�t M�nchen    |
+| f�r den Bachelorstudiengang Computerlinguistik    Vom 24. M�rz 2010         |
+| Auf Grund von Art. 13 Abs. 1 Satz 2 in Verbindung mit Art. 58 Abs. 1 Satz 1 |
+| und  Art. 61 Abs. 2 Satz 1 des Bayerischen Hochschulgesetzes (BayHSchG)     |
+| erl�sst die  Ludwig-Maximilians-Universit�t M�nchen folgende Satzung:  - 2  |
+| -      Inhalts�bersicht    I. Allgemeines    � 1 Gegenstand des             |
+| Studiengangs und �                                                          |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=2.288 | P12 | Computerlinguistisches Arbeiten | Abschnitt: module |
+| | Seite 25                                                                  |
+| Modul: P12 Computerlinguistisches Arbeiten Englischer Modultitel P12        |
+| Computational Linguistics Lab Zuordnung zum Studiengang                     |
+| Bachelorstudiengang: Computerlinguistik Zugeordnete Modulteile Lehrform     |
+| Veranstaltung (Pflicht) Turnus Pr�senzzeit Selbststudium ECTS Kolloquium P  |
+| 12.1 SoSe 30 h (2 SWS) 90 h 4 Repetitorium P 12.2 SoSe 15 h (1 SWS) 45 h 2  |
+| Im Modul m�ssen insgesamt 6 ECTS-Punkte erworben werden. Die Pr�senzzeit    |
+| betr�gt 3 Semesterwochenstunden. Inklusive Selbststudium sind etwa 180      |
+| Stunden a �                                                                 |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=2.268 | P4 | Mathematische Grundlagen der Computerlinguistik |    |
+| Abschnitt: module | Seite 9                                                 |
+| Modul: P4 Mathematische Grundlagen der Computerlinguistik Englischer        |
+| Modultitel P4 Mathematical Methods in Computational Linguistics Zuordnung   |
+| zum Studiengang Bachelorstudiengang: Computerlinguistik Zugeordnete         |
+| Modulteile Lehrform Veranstaltung (Pflicht) Turnus Pr�senzzeit              |
+| Selbststudium ECTS Vorlesung P 4.1 SoSe 45 h (3 SWS) 135 h (6)�bung P 4.2   |
+| SoSe 30 h (2 SWS) 150 h (6) Im Modul m�ssen insgesamt 12 ECTS-Punkte        |
+| erworben werden. Die Pr�senzzeit betr�gt 5 Semesterwochenstunden. Inklusive |
+| Selbsts �                                                                   |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=2.256 | P11 | Informationsextraktion | Abschnitt: module | Seite  |
+| 23                                                                          |
+| Modul: P11 Informationsextraktion Englischer Modultitel P11 Information     |
+| Extraction Zuordnung zum Studiengang Bachelorstudiengang:                   |
+| Computerlinguistik Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht)  |
+| Turnus Pr�senzzeit Selbststudium ECTS Seminar P 11.1 WiSe 30 h (2 SWS) 240  |
+| h 9 Vorlesung P 11.2 WiSe 30 h (2 SWS) 60 h 3 Im Modul m�ssen insgesamt 12  |
+| ECTS-Punkte erworben werden. Die Pr�senzzeit betr�gt 4                      |
+| Semesterwochenstunden. Inklusive Selbststudium sind 360 Stunden             |
+| aufzuwenden. Art des Modul �                                                |
++-----------------------------------------------------------------------------+

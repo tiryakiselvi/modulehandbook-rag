@@ -1,0 +1,54 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=12.330 | P11 | Informationsextraktion | Abschnitt: module | Seite |
+| 23                                                                          |
+| Modul: P11 Informationsextraktion Englischer Modultitel P11 Information     |
+| Extraction Zuordnung zum Studiengang Bachelorstudiengang:                   |
+| Computerlinguistik Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht)  |
+| Turnus Pr�senzzeit Selbststudium ECTS Seminar P 11.1 WiSe 30 h (2 SWS) 240  |
+| h 9 Vorlesung P 11.2 WiSe 30 h (2 SWS) 60 h 3 Im Modul m�ssen insgesamt 12  |
+| ECTS-Punkte erworben werden. Die Pr�senzzeit betr�gt 4                      |
+| Semesterwochenstunden. Inklusive Selbststudium sind 360 Stunden             |
+| aufzuwenden. Art des Modul �                                                |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=8.010 | Abschnitt: document | Seite 1                             |
+| Pr�fungs- und Studienordnung  der Ludwig-Maximilians-Universit�t M�nchen    |
+| f�r den Bachelorstudiengang Computerlinguistik    Vom 24. M�rz 2010         |
+| Auf Grund von Art. 13 Abs. 1 Satz 2 in Verbindung mit Art. 58 Abs. 1 Satz 1 |
+| und  Art. 61 Abs. 2 Satz 1 des Bayerischen Hochschulgesetzes (BayHSchG)     |
+| erl�sst die  Ludwig-Maximilians-Universit�t M�nchen folgende Satzung:  - 2  |
+| -      Inhalts�bersicht    I. Allgemeines    � 1 Gegenstand des             |
+| Studiengangs und �                                                          |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=6.481 | P7 | Formale Sprachen | Abschnitt: module | Seite 15      |
+| Modul: P7 Formale Sprachen Englischer Modultitel P7 Formal Languages        |
+| Zuordnung zum Studiengang Bachelorstudiengang: Computerlinguistik           |
+| Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht) Turnus Pr�senzzeit  |
+| Selbststudium ECTS Vorlesung P 7.1 WiSe 30 h (2 SWS) 60 h (3)�bung P 7.2    |
+| WiSe 30 h (2 SWS) 60 h (3) Im Modul m�ssen insgesamt 6 ECTS-Punkte erworben |
+| werden. Die Pr�senzzeit betr�gt 4 Semesterwochenstunden. Inklusive          |
+| Selbststudium sind etwa 180 Stunden aufzuwenden. Art des Moduls Pflichtmod  |
+| �                                                                           |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=4.809 | P13 | Abschlussmodul | Abschnitt: module | Seite 27       |
+| Modul: P13 Abschlussmodul Englischer Modultitel P13 Final Module Zuordnung  |
+| zum Studiengang Bachelorstudiengang: Computerlinguistik Zugeordnete         |
+| Modulteile Lehrform Veranstaltung (Pflicht) Turnus Pr�senzzeit              |
+| Selbststudium ECTS Bachelorarbeit P 13.1 SoSe, WiSe 0 h 360 h 12            |
+| Disputation P 13.2 SoSe, WiSe 1 h 90 h 3 Im Modul m�ssen insgesamt 15       |
+| ECTS-Punkte erworben werden. Insgesamt sind etwa 450 Stunden aufzuwenden.   |
+| Art des Moduls Pflichtmodul Verwendbarkeit des Moduls in anderen            |
+| Studieng�ngen Das Mo �                                                      |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=4.598 | P3 | Sprachkurs | Abschnitt: module | Seite 7             |
+| Modul: P3 Sprachkurs Englischer Modultitel P3 Language Course Zuordnung zum |
+| Studiengang Bachelorstudiengang: Computerlinguistik Zugeordnete Modulteile  |
+| Lehrform Veranstaltung (Pflicht) Turnus Pr�senzzeit Selbststudium ECTS�bung |
+| P 3 WiSe SoSe 30 h (2 SWS) 60 h (3) Im Modul m�ssen insgesamt 3 ECTS-Punkte |
+| erworben werden. Die Pr�senzzeit betr�gt 2 Semesterwochenstunden. Inklusive |
+| Selbststudium sind etwa 90 Stunden aufzuwenden. Art des Moduls Pflichtmodul |
+| Verwendbarkeit des Moduls in anderen Studieng �                             |
++-----------------------------------------------------------------------------+

@@ -1,0 +1,42 @@
+┌───────────────────────────────── Treffer 1 ─────────────────────────────────┐
+│ [1] Score=0.779 | P13 | Abschlussmodul | Abschnitt: Englischer Modultitel | │
+│ Seite 27                                                                    │
+│ Englischer Modultitel P13 Final Module                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 2 ─────────────────────────────────┐
+│ [2] Score=0.709 | Abschnitt: § 7 Modularisierung und Module | Seite 1       │
+│ § 7  Modularisierung und Module    (1)  1 Das Studium in diesem             │
+│ Bachelorstudiengang ist modular aufgebaut und in  verbindlicher Weise in    │
+│ der Anlage 2 geregelt.  2 Leeren Zellen der Tabellen in der  Anlage 2 kommt │
+│ kein Regelungsgehalt zu.    (2)  1 Das Studium in diesem                    │
+│ Bachelorstudiengang umfasst Pflicht- und  Wahlpflichtmodule.  2             │
+│ Pflichtmodule sind ausnahmslos zu absolvieren; aus  Wahlpflichtmodulen kann │
+│ die oder der Studierende auswählen.  3 Es dürfen nicht  mehr als die        │
+│ erforderliche Anzahl  …                                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 3 ─────────────────────────────────┐
+│ [3] Score=0.698 | Abschnitt: § 35 Inkrafttreten | Seite 1                   │
+│ § 35 Inkrafttreten      Anlage 2: Module, Lehrveranstaltungen,              │
+│ Modulprüfungen/ Modulteilprüfungen  - 4 -    I. Allgemeines                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 4 ─────────────────────────────────┐
+│ [4] Score=0.654 | WP3 | Information Retrieval | Abschnitt: Inhalte | Seite  │
+│ 33                                                                          │
+│ Inhalte Dieses Modul bietet einen Einblick in die wichtigsten Themen des    │
+│ Information Retrievals und der Suchmaschinen. Die Grundlagen der            │
+│ wesentlichen Modelle des Information Retrievals werden vermittelt. Darüber  │
+│ hinaus werden Techniken und Verfahren wie Termgewichtung,Ähnlichkeitsmaße,  │
+│ Boolesches Retrieval, Vektorraummodelle, statistische Modelle, neuronale    │
+│ Modelle, Ranking-Mechanismen, Evaluierungsprinzipien, Benutzerinteraktion,  │
+│ Feedbackmechanismen, Abfrageerweiterung, Relevanzfeedback, Index …          │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 5 ─────────────────────────────────┐
+│ [5] Score=0.627 | WP3 | Information Retrieval | Abschnitt:                  │
+│ Qualifikationsziele | Seite 33                                              │
+│ Qualifikationsziele Lernziele sind Kenntnis der zugrunde gelegten Module,   │
+│ Techniken und Verfahren des Information Retrieval und der Suchmaschinen und │
+│ Verständnis der benötigten Datenstrukturen und Algorithmen. Die             │
+│ Teilnehmenden erhalten in derÜbung ein vertieftes Verständnis der Konzepte  │
+│ und Verfahren, die in der Vorlesung behandelt wurden, unter anderem durch   │
+│ praktische Aufgaben undÜbungen.                                             │
+└─────────────────────────────────────────────────────────────────────────────┘

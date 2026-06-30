@@ -1,0 +1,52 @@
++--------------------------------- Treffer 1 ---------------------------------+
+| [1] Score=25.531 | Abschnitt: naive | Seite 3                               |
+| LUDWIG-MAXIMILIANS-UNIVERSIT�T M�NCHEN Modul: P1 Einf�hrung in die          |
+| Programmierung Englischer Modultitel P1 Introduction to Programming         |
+| Zuordnung zum Studiengang Bachelorstudiengang: Computerlinguistik           |
+| Zugeordnete Modulteile Lehrform Veranstaltung (Pflicht) Turnus Pr�senzzeit  |
+| Selbststudium ECTS Vorlesung P 1.1 WiSe 45 h (3 SWS) 135 h (6)�bung P 1.2   |
+| WiSe 30 h (2 SWS) 60 h (3) Im Modul m�ssen insgesamt 9 ECTS-Punkte erworben |
+| werden. Die Pr�senzzeit betr�gt 5 Semesterwochenstunden. Inklusive Selbsts  |
+| �                                                                           |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 2 ---------------------------------+
+| [2] Score=19.160 | Abschnitt: naive | Seite 2                               |
+| Inhaltsverzeichnis Modul: P1 Einf�hrung in die Programmierung . . . . . . . |
+| . . . . . . . . . . . . . . . . . . . . . 3 Modul: P2 Einf�hrung in die     |
+| Computerlinguistik . . . . . . . . . . . . . . . . . . . . . . . . . . . 5  |
+| Modul: P3 Sprachkurs . . . . . . . . . . . . . . . . . . . . . . . . . . .  |
+| . . . . . . . . . . . . . . . 7 Modul: P4 Mathematische Grundlagen der      |
+| Computerlinguistik . . . . . . . . . . . . . . . . . . . 9 Modul: P5        |
+| Symbolische Programmiersprache . . . . . . . . . . . . . . . . �            |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 3 ---------------------------------+
+| [3] Score=19.007 | Abschnitt: naive | Seite 5                               |
+| an die Fakult�t f�r Mathematik, Informatik und Statistik der TU M�nchen     |
+| exportiert. Wahlpflichtregelungen � Teilnahmevoraussetzung keine Zeitpunkt  |
+| im Studienverlauf Empfohlenes Semester: 1 Dauer Das Modul erstreckt         |
+| sich�ber das ganze Semester. Inhalte Dieses Modul gibt eine Einf�hrung in   |
+| die grundlegenden Konzepte der Computerlinguistik. Behandelt werden         |
+| sprachwissenschaftliche Grundlagen, computerlinguistische Methoden und      |
+| computerlinguistische Anwendungen. Im sprachwissenschaftlichen Teil wird �  |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 4 ---------------------------------+
+| [4] Score=18.233 | Abschnitt: naive | Seite 11                              |
+| dungsfach Computerlinguistik. Die Vorlesung wird zudem an die Fakult�t f�r  |
+| Mathematik, Informatik und Statistik der TU M�nchen exportiert.             |
+| Wahlpflichtregelungen � Teilnahmevoraussetzung keine Zeitpunkt im           |
+| Studienverlauf Empfohlenes Semester: 3 Dauer Das Modul erstreckt sich�ber   |
+| das ganze Semester. Inhalte In diesem Modul vertiefen die Studierenden ihre |
+| Programmierkenntnisse und lernen Konzepte aus der Korpuslinguisik und       |
+| Programmbibliotheken zur Verarbeitung von Sprachdaten kennen. Sie implement |
+| �                                                                           |
++-----------------------------------------------------------------------------+
++--------------------------------- Treffer 5 ---------------------------------+
+| [5] Score=16.999 | Abschnitt: naive | Seite 9                               |
+| ung keine Zeitpunkt im Studienverlauf Empfohlenes Semester: 2 Dauer Das     |
+| Modul erstreckt sich�ber das ganze Semester. Inhalte Das Modul gibt eine    |
+| Einf�hrung in die f�r die Computerlinguistik relevanten Teilgebiete der     |
+| Mathematik. Die Vorlesung beginnt mit einer Diskussion der wichtigsten      |
+| Grundkonzepte der diskreten Mathematik, darunter Aussagen und Junktoren,    |
+| Mengen und Mengenoperationen, Induktion und induktive Konstruktionen,       |
+| Relationen, Funktionen, sowie�quivalenz- und verschiedene Arten von O �     |
++-----------------------------------------------------------------------------+

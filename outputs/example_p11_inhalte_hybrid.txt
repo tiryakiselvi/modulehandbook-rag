@@ -1,0 +1,43 @@
+┌───────────────────────────────── Treffer 1 ─────────────────────────────────┐
+│ [1] Score=0.857 | P11 | Informationsextraktion | Abschnitt: header | Seite  │
+│ 23                                                                          │
+│ Modul: P11 Informationsextraktion                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 2 ─────────────────────────────────┐
+│ [2] Score=0.726 | P11 | Informationsextraktion | Abschnitt: Inhalte | Seite │
+│ 23                                                                          │
+│ Inhalte Das Modul gibt eine Einführung in die Informationsextraktion (IE),  │
+│ also die automatische Extraktion von Information aus Volltexten. Die        │
+│ Anwendungen erstrecken sich von der Unterstützung von InternetSuchmaschinen │
+│ bis zum automatisierten Aufbau von Fachdatenbanken. Die Methoden reichen    │
+│ von der Analyse natürlicher Spracheüber automatische Termerkennung bis zu   │
+│ automatischen Lernverfahren, wobei symbolische, statistische und hybride    │
+│ Methoden zum Einsatz kommen. Komplexe Informationsstrukturen …              │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 3 ─────────────────────────────────┐
+│ [3] Score=0.672 | P11 | Informationsextraktion | Abschnitt: Englischer      │
+│ Modultitel | Seite 23                                                       │
+│ Englischer Modultitel P11 Information Extraction                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 4 ─────────────────────────────────┐
+│ [4] Score=0.620 | WP3 | Information Retrieval | Abschnitt: Inhalte | Seite  │
+│ 33                                                                          │
+│ Inhalte Dieses Modul bietet einen Einblick in die wichtigsten Themen des    │
+│ Information Retrievals und der Suchmaschinen. Die Grundlagen der            │
+│ wesentlichen Modelle des Information Retrievals werden vermittelt. Darüber  │
+│ hinaus werden Techniken und Verfahren wie Termgewichtung,Ähnlichkeitsmaße,  │
+│ Boolesches Retrieval, Vektorraummodelle, statistische Modelle, neuronale    │
+│ Modelle, Ranking-Mechanismen, Evaluierungsprinzipien, Benutzerinteraktion,  │
+│ Feedbackmechanismen, Abfrageerweiterung, Relevanzfeedback, Index …          │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────── Treffer 5 ─────────────────────────────────┐
+│ [5] Score=0.615 | P12 | Computerlinguistisches Arbeiten | Abschnitt:        │
+│ Inhalte | Seite 25                                                          │
+│ Inhalte Nach einer Anleitung zu Beginn des Kurses berichten die             │
+│ Teilnehmenden im Kolloquiumüber ihre laufenden Bachelorarbeiten, wobei auch │
+│ die dahinterstehenden Projekte und größeren Fragestellungen, aus denen die  │
+│ Themen entstanden sind, darzustellen sind. Die anderen Teilnehmenden        │
+│ diskutieren die Ergebnisse und schreiben Protokolle zu den Vorträgen. Im    │
+│ Repetitorium werden die Protokolle besprochen. Es werden Tools und Tipps    │
+│ zum Verfassen von Abschlussarbeiten behandelt. Gegen Semesterende beri …    │
+└─────────────────────────────────────────────────────────────────────────────┘
