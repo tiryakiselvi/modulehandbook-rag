@@ -61,10 +61,10 @@ st.caption("Strukturierte Suche über vorbereitete Modulhandbuch- und Ordnungste
 with st.sidebar:
     st.header("Einstellungen")
     corpus_name = st.selectbox("Korpus", list(CORPORA))
-    retriever_name = st.selectbox("Retrieval", ["BM25", "Hybrid", "Dense"], index=1)
+    retriever_name = st.selectbox("Retrieval", ["BM25", "Hybrid", "Dense"], index=0)
     top_k = st.slider("Trefferanzahl", min_value=1, max_value=8, value=3)
     alpha = st.slider("Hybrid-Gewichtung", 0.0, 1.0, 0.5, 0.05)
-    section_boost = st.slider("Abschnittsgewichtung", 0.0, 10.0, 0.0, 0.5)
+    section_boost = st.slider("Abschnittsgewichtung", 0.0, 10.0, 8.0, 0.5)
 
 query = st.text_input(
     "Frage",
