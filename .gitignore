@@ -1,7 +1,6 @@
-# Python
+# Python caches
 __pycache__/
 *.py[cod]
-*$py.class
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -11,14 +10,13 @@ __pycache__/
 venv/
 env/
 
-# Local app / system files
+# Local files
 .streamlit/secrets.toml
 .DS_Store
 Thumbs.db
 
-# Generated data
+# Generated chunks, can be recreated from data/raw
 data/processed/
-outputs/
 
 # Build artifacts
 build/

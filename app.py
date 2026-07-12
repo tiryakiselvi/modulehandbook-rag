@@ -208,7 +208,7 @@ EXAMPLE_QUESTIONS = {
 
 LANGUAGE_NOTES = {
     "Auto": "Die Fragesprache wird automatisch als Deutsch, English oder Türkçe erkannt.",
-    "Deutsch": "Deutsch: Auto wählt BM25 bei Modulnummern, sonst Hybrid.",
+    "Deutsch": "Deutsch: Auto wählt je nach Anfrage BM25 oder Hybrid.",
     "English": "English: Hybrid oder Dense gleicht die englische Frage mit deutschen Handbuchtexten ab.",
     "Türkçe": "Türkçe: Hybrid oder Dense gleicht die türkische Frage mit deutschen Handbuchtexten ab.",
 }
@@ -290,19 +290,18 @@ def render_hero() -> None:
     st.markdown(
         """
         <div class="hero">
-          <div class="eyebrow">🎓 LMU Modulhandbuch-RAG · moderne Suchdemo</div>
-          <h1>Frage das Modulhandbuch.</h1>
+          <div class="eyebrow">🎓 LMU Modulhandbuch-RAG</div>
+          <h1>Suche in Modulhandbüchern.</h1>
           <p>
-            Stelle eine normale Frage, auch ohne Modulnummer. Die Suche erkennt Sprache und Fragetyp,
-            wählt auf Wunsch das passende Korpus und kombiniert lexikalische mit semantischer Suche.
-            Jede Antwort bleibt an sichtbare Evidenz aus dem Modulhandbuch gebunden.
+            Die Anwendung durchsucht ausgewählte Modulhandbücher und zeigt die relevantesten
+            Evidenzstellen mit Quelle, Abschnitt und Score. Je nach Anfrage können lexikalische
+            und semantische Suche kombiniert werden.
           </p>
           <div class="chip-row">
-            <span class="chip">natürliche Sprache</span>
-            <span class="chip">automatische Korpuswahl</span>
+            <span class="chip">Korpusauswahl</span>
             <span class="chip">BM25 · Dense · Hybrid</span>
             <span class="chip">Deutsch · English · Türkçe</span>
-            <span class="chip">abgerundete Suche</span>
+            <span class="chip">sichtbare Evidenz</span>
           </div>
         </div>
         """,
@@ -542,5 +541,5 @@ elif run:
     st.info("Gib zuerst eine Frage ein.")
 else:
     st.caption(
-        "Beispiel ohne Modulnummer: Welche Veranstaltung behandelt Information Retrieval? Im Auto-Modus wird dafür Hybrid Retrieval genutzt."
+        "Beispiel: Welche Veranstaltung behandelt Information Retrieval?"
     )

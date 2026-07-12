@@ -1,0 +1,12 @@
+Evaluation setup
+================
+Chunks: data/processed/chunks_field.jsonl
+Retriever: Hybrid
+Top-k: 3
+Gold queries: data/eval/multilingual_eval_queries.jsonl
+Strict section matching: yes
+Grouped by query type: yes
+
+Notes
+=====
+The multilingual evaluation checks whether German module handbook content can be retrieved from German, English, and Turkish queries. BM25 is lexical and works best with German terminology. Dense and Hybrid retrieval are better suited for cross-lingual and semantic queries.

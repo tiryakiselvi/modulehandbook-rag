@@ -1,37 +1,36 @@
 # modulehandbook-rag
 
-A retrieval-augmented search system for university module handbooks.
+Ein Retrieval-Augmented-Generation-System für Modulhandbücher. Das Projekt extrahiert Text aus Modulhandbuch-PDFs, zerlegt die Dokumente in strukturierte Chunks und sucht zu natürlichsprachlichen Fragen passende Textstellen. Die gefundenen Chunks dienen als nachvollziehbare Evidenz für eine Antwort.
 
-The project focuses on finding answer-bearing evidence in semi-structured module handbook documents. It supports multiple chunking strategies and retrieval methods, and provides both a command-line interface and a Streamlit interface for interactive search.
+## Überblick
 
-## Features
+Modulhandbücher sind lang, halb-strukturiert und enthalten viele wiederkehrende Felder, zum Beispiel ECTS, Prüfungsform, Inhalte, Voraussetzungen, Sprache oder Modulverantwortliche. Eine einfache Volltextsuche liefert dabei häufig Treffer, die zwar einzelne Wörter enthalten, aber nicht die passende Antwortstelle sind.
 
-- Ingestion of PDF, TXT, and Markdown documents
-- Text cleaning and normalization
-- Three chunking strategies:
-  - naive text chunks
-  - module-level chunks
-  - field-level chunks
-- Retrieval methods:
-  - BM25
-  - dense retrieval with sentence-transformers
-  - hybrid retrieval
-- Evidence-first answers with source references
-- Multilingual query support for German, English, and Turkish
-- Evaluation with common retrieval metrics
-- Streamlit interface for interactive exploration
+Dieses Projekt vergleicht deshalb unterschiedliche Chunking- und Retrieval-Strategien:
 
-## Project structure
+- naive Chunking
+- module-level Chunking
+- field-level Chunking
+- BM25 Retrieval
+- Dense Retrieval
+- Hybrid Retrieval
+
+Die Anwendung kann Fragen auf Deutsch, Englisch und Türkisch verarbeiten. Da die Modulhandbücher selbst deutsch sind, ist BM25 besonders stark bei deutschen Anfragen. Für englische und türkische Fragen sind Dense Retrieval oder Hybrid Retrieval besser geeignet.
+
+## Projektstruktur
 
 ```text
 modulehandbook-rag/
 ├── app.py
 ├── data/
 │   ├── raw/
-│   ├── processed/
-│   └── eval/
+│   ├── eval/
+│   └── processed/
 ├── docs/
-├── src/modulehandbook_rag/
+├── outputs/
+├── scripts/
+├── src/
+│   └── modulehandbook_rag/
 ├── tests/
 ├── pyproject.toml
 └── README.md
@@ -39,34 +38,29 @@ modulehandbook-rag/
 
 ## Installation
 
-The project is developed for Python 3.12.
+Unter Windows mit Git Bash:
 
 ```bash
 python -m venv .venv
 source .venv/Scripts/activate
+
 python -m pip install --upgrade pip
 python -m pip install -e ".[all]"
 ```
 
-On macOS or Linux, activate the environment with:
+Nur die Basisversion ohne Streamlit und Dense Retrieval:
 
 ```bash
-source .venv/bin/activate
+python -m pip install -e .
 ```
 
-## Data
+## Daten
 
-Place module handbook PDFs in:
+Die Modulhandbücher liegen unter `data/raw/`. Enthalten sind Modulhandbücher für Computerlinguistik und Informatik, jeweils Bachelor und Master. Bei Informatik sind zusätzlich Varianten für Nebenfach und Studienbeginn im Sommersemester beziehungsweise Wintersemester enthalten.
 
-```text
-data/raw/
-```
+Die Quellen der Dokumente sind in `docs/modulhandbuch_quellen.md` dokumentiert.
 
-The system can process multiple handbooks and keep document metadata during retrieval, so results can be traced back to their source document.
-
-## Create chunks
-
-Field-level chunking is the recommended default for precise evidence retrieval.
+## Chunks erzeugen
 
 ```bash
 python -m modulehandbook_rag.cli ingest data/raw \
@@ -74,7 +68,7 @@ python -m modulehandbook_rag.cli ingest data/raw \
   --out data/processed/chunks_field.jsonl
 ```
 
-Other chunking modes are available as well:
+Weitere Chunking-Varianten:
 
 ```bash
 python -m modulehandbook_rag.cli ingest data/raw \
@@ -86,84 +80,62 @@ python -m modulehandbook_rag.cli ingest data/raw \
   --out data/processed/chunks_naive.jsonl
 ```
 
-## Command-line search
-
-```bash
-python -m modulehandbook_rag.cli search \
-  --chunks data/processed/chunks_field.jsonl \
-  --query "Welche Prüfungsform hat Information Retrieval?" \
-  --retriever bm25 \
-  --top-k 5
-```
-
-Dense retrieval:
-
-```bash
-python -m modulehandbook_rag.cli search \
-  --chunks data/processed/chunks_field.jsonl \
-  --query "Which course covers information retrieval?" \
-  --retriever dense \
-  --top-k 5
-```
-
-Hybrid retrieval:
-
-```bash
-python -m modulehandbook_rag.cli search \
-  --chunks data/processed/chunks_field.jsonl \
-  --query "Bilgi erişimi ile ilgili hangi ders var?" \
-  --retriever hybrid \
-  --top-k 5
-```
-
-## Streamlit interface
-
-After chunk generation, start the interface with:
+## Streamlit-App starten
 
 ```bash
 python -m streamlit run app.py
 ```
 
-The interface supports corpus selection, retrieval configuration, multilingual queries, and evidence inspection.
+Die App öffnet sich anschließend unter `http://localhost:8501`.
 
-## Retrieval approach
+## Suche über die CLI
 
-The system is designed around evidence retrieval rather than unrestricted text generation. A query is matched against structured chunks, and the retrieved evidence is shown with metadata such as module, section, score, and source document.
-
-BM25 works well for German queries that share terminology with the handbook text. Dense and hybrid retrieval are useful for semantic queries and multilingual queries, especially when the wording differs from the original German document text.
+```bash
+python -m modulehandbook_rag.cli search \
+  "Welche Veranstaltung behandelt Information Retrieval?" \
+  --chunks data/processed/chunks_field.jsonl \
+  --retriever hybrid \
+  --top-k 5
+```
 
 ## Evaluation
 
-Evaluation files are stored in:
-
-```text
-data/eval/
-```
-
-Run retrieval evaluation with:
+Die Retrieval-Evaluation nutzt Gold-Queries aus `data/eval/`.
 
 ```bash
 python -m modulehandbook_rag.cli evaluate \
   --eval-file data/eval/retrieval_eval_queries.jsonl \
   --chunks data/processed/chunks_field.jsonl \
   --retriever bm25 \
-  --top-k 5 \
-  --require-section
+  --top-k 3 \
+  --require-section \
+  --by-query-type
 ```
 
-The evaluation reports retrieval-oriented metrics such as Hit@1, MRR, nDCG@k, Precision@k, and Recall@k.
+Für mehrsprachige Fragen:
 
-## Multilingual queries
+```bash
+python -m modulehandbook_rag.cli evaluate \
+  --eval-file data/eval/multilingual_eval_queries.jsonl \
+  --chunks data/processed/chunks_field.jsonl \
+  --retriever hybrid \
+  --top-k 3 \
+  --require-section \
+  --by-query-type
+```
 
-The handbooks are primarily written in German. German queries can be handled well by BM25 or hybrid retrieval. English and Turkish queries should use dense or hybrid retrieval because these methods can match semantically related formulations across languages.
+Ein Beispiel für dokumentierte Ergebnisdateien liegt unter `outputs/`.
 
-## Limitations
+## Korpusauswahl
 
-- Retrieval quality depends on the structure and consistency of the input documents.
-- Very vague queries may not contain enough information to identify the intended module or section.
-- Dense retrieval requires additional dependencies and downloads a sentence-transformers model on first use.
-- Generated answers, when enabled, should be interpreted together with the retrieved evidence.
+Wenn mehrere Modulhandbücher infrage kommen, kann das Korpus in der App explizit ausgewählt werden. Zusätzlich enthält die App eine automatische Auswahl, die Studiengang, Abschluss und Varianten wie Nebenfach oder Studienbeginn aus der Anfrage ableitet, sofern diese Informationen genannt werden.
 
-## License
+Ohne eindeutige Angabe wird ein Standardkorpus verwendet, der Computerlinguistik Bachelor, Computerlinguistik Master, Informatik Bachelor mit integriertem Anwendungsfach und Informatik Master mit Studienbeginn im Wintersemester enthält.
 
-Add the appropriate license for the project before publication if needed.
+## Mehrsprachige Suche
+
+BM25 arbeitet lexikalisch und ist besonders stark, wenn die Anfrage deutsche Begriffe aus dem Modulhandbuch enthält. Dense Retrieval nutzt mehrsprachige Satzrepräsentationen. Hybrid Retrieval kombiniert beide Ansätze und ist deshalb die robusteste Option für frei formulierte oder mehrsprachige Fragen.
+
+## Limitationen
+
+Die Qualität hängt von der Struktur der Modulhandbücher, der Textqualität nach PDF-Extraktion und der Formulierung der Anfrage ab. Sehr vage Fragen sind schwieriger als Fragen mit erkennbarem Thema, Feld oder Studiengang. Generierte Antworten sollten immer zusammen mit den gefundenen Evidenzstellen betrachtet werden.
