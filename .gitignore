@@ -1,24 +1,15 @@
-# Python caches
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
-# Virtual environments
 .venv/
 venv/
 env/
-
-# Local files
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+data/processed/
 .streamlit/secrets.toml
 .DS_Store
 Thumbs.db
-
-# Generated chunks, can be recreated from data/raw
-data/processed/
-
-# Build artifacts
 build/
 dist/
 *.egg-info/
