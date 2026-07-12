@@ -1,0 +1,58 @@
+[
+  {
+    "id": "inf_bsc_60nf",
+    "title": "LMU Informatik Bachelor mit Nebenfach 60 ECTS",
+    "url": "https://www.ifi.lmu.de/studium/studiengaenge/bachelor/bachelor_informatik/2023-11-22-ba-informatik-m-60-ects-nf_modulhandbuch-z-psto-2022.pdf",
+    "filename": "lmu_informatik_bsc_60ects_nebenfach_stand_2023-11-22.pdf",
+    "source_page": "https://www.ifi.lmu.de/studium/studiengaenge/bachelor/bachelor_informatik/index.html",
+    "stand": "22.11.2023"
+  },
+  {
+    "id": "inf_bsc_30nf",
+    "title": "LMU Informatik Bachelor mit Nebenfach 30 ECTS",
+    "url": "https://www.ifi.lmu.de/studium/studiengaenge/bachelor/bachelor_informatik/2023-11-22-ba-informatik-m-30-ects-nf_modulhandbuch-z-psto-2022.pdf",
+    "filename": "lmu_informatik_bsc_30ects_nebenfach_stand_2023-11-22.pdf",
+    "source_page": "https://www.ifi.lmu.de/studium/studiengaenge/bachelor/bachelor_informatik/index.html",
+    "stand": "22.11.2023"
+  },
+  {
+    "id": "inf_bsc_integr_af",
+    "title": "LMU Informatik Bachelor mit integriertem Anwendungsfach",
+    "url": "https://www.ifi.lmu.de/studium/studiengaenge/bachelor/bachelor_informatik/2023-11-22-ba-informatik-m-integr-af_modulhandbuch-z-psto-2022.pdf",
+    "filename": "lmu_informatik_bsc_integriertes_anwendungsfach_stand_2023-11-22.pdf",
+    "source_page": "https://www.ifi.lmu.de/studium/studiengaenge/bachelor/bachelor_informatik/index.html",
+    "stand": "22.11.2023"
+  },
+  {
+    "id": "inf_msc_wise",
+    "title": "LMU Informatik Master bei Beginn im Wintersemester",
+    "url": "https://www.ifi.lmu.de/studium/studiengaenge/master/master_informatik/2023-01-20_ma-informatik_modulhandbuch-z-psto-2022-bei-beginn-im-wise.pdf",
+    "filename": "lmu_informatik_msc_beginn_wise_stand_2023-01-20.pdf",
+    "source_page": "https://www.ifi.lmu.de/studium/studiengaenge/master/master_informatik/index.html",
+    "stand": "20.01.2023"
+  },
+  {
+    "id": "inf_msc_sose",
+    "title": "LMU Informatik Master bei Beginn im Sommersemester",
+    "url": "https://www.ifi.lmu.de/studium/studiengaenge/master/master_informatik/2023-01-20_ma-informatik_modulhandbuch-z-psto-2022-bei-beginn-im-sose.pdf",
+    "filename": "lmu_informatik_msc_beginn_sose_stand_2023-01-20.pdf",
+    "source_page": "https://www.ifi.lmu.de/studium/studiengaenge/master/master_informatik/index.html",
+    "stand": "20.01.2023"
+  },
+  {
+    "id": "cl_bsc",
+    "title": "LMU Computerlinguistik Bachelor",
+    "url": "https://cms-cdn.lmu.de/media/contenthub/studiengangsfinder/downloads/modulhandbuecher/computerlinguistik_bsc_modulhandbuch_1.pdf",
+    "filename": "lmu_computerlinguistik_bsc_stand_2025-09-24.pdf",
+    "source_page": "https://www.lmu.de/de/studium/studienangebot/alle-studienfaecher-und-studiengaenge/computerlinguistik-bachelor-hauptfach-2872.html",
+    "stand": "24.09.2025"
+  },
+  {
+    "id": "cl_msc",
+    "title": "LMU Computerlinguistik Master",
+    "url": "https://cms-cdn.lmu.de/media/contenthub/studiengangsfinder/downloads/modulhandbuecher/msc-modulhandbuch.pdf",
+    "filename": "lmu_computerlinguistik_msc_stand_2025-07-08.pdf",
+    "source_page": "https://www.lmu.de/de/studium/studienangebot/alle-studienfaecher-und-studiengaenge/computerlinguistik-mit-profilbereich-master-hauptfach-4479.html",
+    "stand": "08.07.2025"
+  }
+]
