@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local app / system files
+.streamlit/secrets.toml
+.DS_Store
+Thumbs.db
+
+# Generated data
+data/processed/
+outputs/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
