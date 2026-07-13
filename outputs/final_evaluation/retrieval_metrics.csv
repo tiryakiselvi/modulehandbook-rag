@@ -1,0 +1,19 @@
+series,query_set,n,corpus,chunking,retriever,top_k,matching,section_boost,query_expansion,alpha,precision@3,recall@3,mrr,ndcg@3,hit@1
+chunking_comparison,Deutsch n=25,25,official_cl_bsc,naive,BM25,3,module,8.0,True,,0.30666666666666653,0.92,0.7666666666666667,0.8061859507142916,0.64
+chunking_comparison,Deutsch n=25,25,official_cl_bsc,module,BM25,3,module,8.0,True,,0.31999999999999984,0.96,0.96,0.96,0.96
+chunking_comparison,Deutsch n=25,25,official_cl_bsc,field,BM25,3,module,8.0,True,,0.30666666666666653,0.92,0.8733333333333333,0.8852371901428583,0.84
+bm25_ablation,Deutsch n=25,25,official_cl_bsc,field,BM25_plain,3,module+section,0.0,False,,0.10666666666666666,0.28,0.3,0.274288965564095,0.28
+bm25_ablation,Deutsch n=25,25,official_cl_bsc,field,BM25_expansion,3,module+section,0.0,True,,0.2799999999999999,0.8,0.6866666666666668,0.7009487605714333,0.56
+bm25_ablation,Deutsch n=25,25,official_cl_bsc,field,BM25_domain,3,module+section,8.0,True,,0.26666666666666655,0.78,0.7333333333333333,0.7350002679963349,0.68
+retriever_comparison,Deutsch n=25,25,official_cl_bsc,field,Dense,3,module+section,,,,0.14666666666666667,0.4,0.34,0.3525004019945024,0.28
+retriever_comparison,Deutsch n=25,25,official_cl_bsc,field,BM25_domain,3,module+section,8.0,True,,0.26666666666666655,0.78,0.7333333333333333,0.7350002679963349,0.68
+alpha_sweep,Deutsch n=25,25,official_cl_bsc,field,Hybrid,3,module+section,8.0,True,0.25,0.30666666666666653,0.88,0.8133333333333332,0.8234486265732657,0.72
+alpha_sweep,Deutsch n=25,25,official_cl_bsc,field,Hybrid,3,module+section,8.0,True,0.5,0.3199999999999999,0.9,0.74,0.7809487605714333,0.6
+alpha_sweep,Deutsch n=25,25,official_cl_bsc,field,Hybrid,3,module+section,8.0,True,0.75,0.22666666666666666,0.64,0.4733333333333333,0.5191601970018407,0.32
+retriever_comparison,Mehrsprachig n=18,18,official_cl_bsc,field,Dense,3,module+section,,,,0.14814814814814814,0.4444444444444444,0.31481481481481477,0.34788108373016197,0.2222222222222222
+retriever_comparison,Mehrsprachig n=18,18,official_cl_bsc,field,BM25_domain,3,module+section,8.0,True,,0.3148148148148147,0.9444444444444444,0.7777777777777779,0.8201033059523842,0.6666666666666666
+alpha_sweep,Mehrsprachig n=18,18,official_cl_bsc,field,Hybrid,3,module+section,8.0,True,0.25,0.33333333333333326,1.0,0.898148148148148,0.923940541865081,0.8333333333333334
+alpha_sweep,Mehrsprachig n=18,18,official_cl_bsc,field,Hybrid,3,module+section,8.0,True,0.5,0.3148148148148147,0.9444444444444444,0.8888888888888888,0.9034366392857175,0.8333333333333334
+alpha_sweep,Mehrsprachig n=18,18,official_cl_bsc,field,Hybrid,3,module+section,8.0,True,0.75,0.25925925925925924,0.7777777777777778,0.5185185185185185,0.5859687793650923,0.2777777777777778
+corpus_robustness,Deutsch n=25,25,curated_main,field,BM25_domain,3,module+section,8.0,True,,0.23999999999999994,0.7,0.6533333333333334,0.655000267996335,0.6
+corpus_robustness,Deutsch n=25,25,stress_all_variants,field,BM25_domain,3,module+section,8.0,True,,0.25333333333333324,0.74,0.6533333333333334,0.6654746482820515,0.56

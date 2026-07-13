@@ -1,0 +1,26 @@
+{
+  "commit": "e6ed64dac7e7eeeb852e73fbd607b87fbd37c23e",
+  "python": "3.11.9",
+  "german_queries": 25,
+  "multilingual_queries": 18,
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "official_corpus": [
+    "lmu_computerlinguistik_bsc_stand_2025-09-24.pdf"
+  ],
+  "curated_main_corpus": [
+    "lmu_computerlinguistik_bsc_stand_2025-09-24.pdf",
+    "lmu_computerlinguistik_msc_stand_2025-07-08.pdf",
+    "lmu_informatik_bsc_integriertes_anwendungsfach_stand_2023-11-22.pdf",
+    "lmu_informatik_msc_beginn_wise_stand_2023-01-20.pdf"
+  ],
+  "stress_corpus": [
+    "lmu_computerlinguistik_bsc_stand_2025-09-24.pdf",
+    "lmu_computerlinguistik_msc_stand_2025-07-08.pdf",
+    "lmu_informatik_bsc_30ects_nebenfach_stand_2023-11-22.pdf",
+    "lmu_informatik_bsc_60ects_nebenfach_stand_2023-11-22.pdf",
+    "lmu_informatik_bsc_integriertes_anwendungsfach_stand_2023-11-22.pdf",
+    "lmu_informatik_msc_beginn_sose_stand_2023-01-20.pdf",
+    "lmu_informatik_msc_beginn_wise_stand_2023-01-20.pdf"
+  ],
+  "evaluation_note": "Official quality metrics use the CL-BSc Gold set. Curated and all-variant rows are robustness diagnostics with the same CL-BSc questions."
+}
