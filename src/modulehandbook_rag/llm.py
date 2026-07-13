@@ -13,9 +13,9 @@ class OllamaClient:
     base_url: str = "http://localhost:11434"
     timeout: int = 300
 
-    def generate(self, prompt: str, temperature: float = 0.0) -> str:
+    def generate(self, prompt: str, temperature: float = 0.0, seed: int = 42) -> str:
         payload = json.dumps({"model": self.model, "prompt": prompt, "stream": False,
-                              "options": {"temperature": temperature}}).encode("utf-8")
+                              "options": {"temperature": temperature, "seed": seed}}).encode("utf-8")
         request = urllib.request.Request(
             self.base_url.rstrip("/") + "/api/generate", data=payload,
             headers={"Content-Type": "application/json"}, method="POST")

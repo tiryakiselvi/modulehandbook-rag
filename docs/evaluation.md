@@ -23,6 +23,10 @@ Verwendete Retrieval-Metriken:
 
 Optional kann die Evaluation nach Fragetypen gruppiert werden, zum Beispiel Prüfungsform, ECTS, Inhalte oder Sprache.
 
+Relaxed Modul-Retrieval und strict Section-Retrieval sind getrennte Aufgaben. Strict-Ergebnisse für Naive- oder Module-Chunks werden nicht als Qualitätsvergleich berichtet, da diese Chunktypen keine kompatiblen Section-Einheiten besitzen.
+
+Die abschließenden Ergebnisse und ihre methodische Einordnung stehen in [`docs/final_evaluation.md`](final_evaluation.md). Die zugehörigen Rohdateien liegen unter `outputs/final_evaluation/`.
+
 ## Beispielbefehle
 
 ```bash

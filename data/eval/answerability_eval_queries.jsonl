@@ -1,0 +1,6 @@
+{"id":"a01","category":"answerable","query":"Wie viele ECTS hat WP3 Information Retrieval?","expected_behavior":"answer"}
+{"id":"a02","category":"answerable","query":"Wer ist für P10 Statistische Methoden in der Sprachverarbeitung verantwortlich?","expected_behavior":"answer"}
+{"id":"u01","category":"unsupported","query":"An welchem Datum findet die nächste Prüfung für WP3 Information Retrieval statt?","expected_behavior":"abstain"}
+{"id":"u02","category":"unsupported","query":"Wie lautet die E-Mail-Adresse der für P10 verantwortlichen Person?","expected_behavior":"abstain"}
+{"id":"c01","category":"ambiguous","query":"Wie viele ECTS hat P1?","expected_behavior":"clarify"}
+{"id":"c02","category":"ambiguous","query":"Wer ist für WP3 verantwortlich?","expected_behavior":"clarify"}

@@ -14,11 +14,14 @@ def chunk_index_text(chunk: Chunk) -> str:
     find the exact `Form der Modulprüfung` field instead of only the header.
     """
 
+    module = " ".join(
+        part for part in (chunk.module_code or "", chunk.module_title or "") if part
+    )
     parts = [
-        chunk.module_code or "",
-        chunk.module_title or "",
-        chunk.section or "",
-        chunk.text,
+        f"Dokument: {chunk.title}" if chunk.title else "",
+        f"Modul: {module}" if module else "",
+        f"Feld: {chunk.section}" if chunk.section else "",
+        f"Inhalt: {chunk.text}",
     ]
     return "\n".join(p for p in parts if p)
 

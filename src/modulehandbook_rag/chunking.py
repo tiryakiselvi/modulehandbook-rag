@@ -66,6 +66,7 @@ def module_chunks(docs: list[Document], module_pattern: str = DEFAULT_MODULE_PAT
         parts, text = _joined(pages)
         _, matches = _module_matches(text, module_pattern)
         source_chunks: list[Chunk] = []
+        module_parts: dict[str, int] = defaultdict(int)
         for index, match in enumerate(matches):
             end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
             body = text[match.start():end].strip()
@@ -73,8 +74,10 @@ def module_chunks(docs: list[Document], module_pattern: str = DEFAULT_MODULE_PAT
                 continue
             code = re.sub(r"\s+", "", match.group(1)).upper()
             title = re.sub(r"\s*\.+\s*\d+\s*$", "", match.group(2).strip())
+            part = module_parts[code]
+            module_parts[code] += 1
             source_chunks.append(Chunk(
-                chunk_id=f"{source}:module:{code}", doc_id=source,
+                chunk_id=f"{source}:module:{code}:part:{part}", doc_id=source,
                 title=Path(source).name, source_path=source, text=body,
                 page_number=_page(parts, match.start()), module_code=code,
                 module_title=title, section="module", document_type="module_handbook",
@@ -105,6 +108,7 @@ def field_chunks(docs: list[Document], module_pattern: str = DEFAULT_MODULE_PATT
         header = module.text[:matches[0].start()].strip()
         if header:
             chunks.append(_copy(module, f"{module.chunk_id}:header", header, "header"))
+        section_parts: dict[str, int] = defaultdict(int)
         for index, match in enumerate(matches):
             start = match.start()
             end = matches[index + 1].start() if index + 1 < len(matches) else len(module.text)
@@ -114,21 +118,17 @@ def field_chunks(docs: list[Document], module_pattern: str = DEFAULT_MODULE_PATT
             body = module.text[start:end].strip()
             if len(body) > 20:
                 slug = re.sub(r"\W+", "_", name.lower()).strip("_")
-                chunks.append(_copy(module, f"{module.chunk_id}:field:{slug}", body, name))
-    return _dedupe(chunks)
+                part = section_parts[slug]
+                section_parts[slug] += 1
+                chunk_id = f"{module.chunk_id}:field:{slug}:part:{part}"
+                chunks.append(_copy(module, chunk_id, body, name))
+    return chunks
 
 def _copy(base: Chunk, chunk_id: str, text: str, section: str) -> Chunk:
     return Chunk(chunk_id=chunk_id, doc_id=base.doc_id, title=base.title,
                  source_path=base.source_path, text=text, page_number=base.page_number,
                  module_code=base.module_code, module_title=base.module_title,
                  section=section, document_type=base.document_type)
-
-def _dedupe(chunks: list[Chunk]) -> list[Chunk]:
-    unique: dict[str, Chunk] = {}
-    for chunk in chunks:
-        if chunk.chunk_id not in unique or len(chunk.text) > len(unique[chunk.chunk_id].text):
-            unique[chunk.chunk_id] = chunk
-    return list(unique.values())
 
 def make_chunks(docs: list[Document], mode: str, chunk_size: int = 900, overlap: int = 120,
                 module_pattern: str = DEFAULT_MODULE_PATTERN,

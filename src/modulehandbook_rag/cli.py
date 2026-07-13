@@ -15,7 +15,7 @@ from .chunking import make_chunks
 from .citations import format_result
 from .data_loader import load_documents
 from .dense_retrieval import DenseRetriever
-from .evaluation import evaluate_by_query_type, evaluate_results, load_eval_queries
+from .evaluation import evaluate_by_query_type, evaluate_per_query, evaluate_results, load_eval_queries
 from .handbook_config import load_handbook_config
 from .hybrid_retrieval import HybridRetriever
 from .llm import LLMError, OllamaClient
@@ -113,6 +113,7 @@ def ask_llm(
     model: str = typer.Option("llama3.1:8b", help="Ollama model name."),
     ollama_url: str = typer.Option("http://localhost:11434", help="Ollama base URL."),
     temperature: float = typer.Option(0.0, help="LLM temperature."),
+    seed: int = typer.Option(42, help="Generation seed used for reproducibility checks."),
     section_boost: float = typer.Option(8.0, help="BM25 section boost. Use 0 for the BM25 ablation baseline."),
     query_expansion: bool = typer.Option(True, "--query-expansion/--no-query-expansion", help="Use domain-specific BM25 query expansion."),
     alpha: float = typer.Option(0.5, help="Hybrid weight for dense retrieval. 0=BM25 only, 1=dense only."),
@@ -128,7 +129,7 @@ def ask_llm(
         answer = llm_answer_from_results(
             query,
             results,
-            lambda prompt: client.generate(prompt, temperature=temperature),
+            lambda prompt: client.generate(prompt, temperature=temperature, seed=seed),
         )
     except LLMError as exc:
         console.print(Panel(str(exc), title="LLM-Fehler", style="red"))
@@ -149,6 +150,7 @@ def evaluate_command(
     query_expansion: bool = typer.Option(True, "--query-expansion/--no-query-expansion", help="Use domain-specific BM25 query expansion."),
     alpha: float = typer.Option(0.5, help="Hybrid weight for dense retrieval. 0=BM25 only, 1=dense only."),
     out: Path | None = typer.Option(None, help="Optional JSON output file for metrics."),
+    details_out: Path | None = typer.Option(None, help="Optional CSV with one auditable row per query."),
 ) -> None:
     eval_queries = load_eval_queries(eval_file)
     chunk_list = read_jsonl(chunks)
@@ -190,6 +192,20 @@ def evaluate_command(
         }
         out.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
         console.print(f"Wrote metrics to [bold]{out}[/bold].")
+
+    if details_out:
+        ensure_parent(details_out)
+        detail_rows = evaluate_per_query(
+            eval_queries,
+            retr.search,
+            k=top_k,
+            require_section=require_section,
+        )
+        with details_out.open("w", encoding="utf-8", newline="") as file:
+            writer = csv.DictWriter(file, fieldnames=list(detail_rows[0].keys()))
+            writer.writeheader()
+            writer.writerows(detail_rows)
+        console.print(f"Wrote per-query analysis to [bold]{details_out}[/bold].")
 
 
 @app.command("benchmark")

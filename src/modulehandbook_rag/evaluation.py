@@ -119,6 +119,39 @@ def _dedupe_preserve_order(items: list[str]) -> list[str]:
     return list(dict.fromkeys(items))
 
 
+def _module_eval_key(chunk: Chunk, query: EvalQuery) -> str:
+    module = (chunk.module_code or "").upper()
+    if query.relevant_documents:
+        return f"{_chunk_document_name(chunk)}::{module}"
+    return module
+
+
+def _section_eval_key(chunk: Chunk, query: EvalQuery) -> str:
+    module = (chunk.module_code or "").upper()
+    section = chunk.section or ""
+    if query.relevant_documents:
+        return f"{_chunk_document_name(chunk)}::{module}::{section}"
+    return f"{module}::{section}"
+
+
+def _gold_eval_keys(query: EvalQuery, require_section: bool) -> set[str]:
+    documents = query.relevant_documents or {""}
+    modules = query.relevant_modules or {""}
+    sections = query.relevant_sections or {""}
+    if require_section:
+        return {
+            f"{document}::{module}::{section}" if query.relevant_documents else f"{module}::{section}"
+            for document in documents
+            for module in modules
+            for section in sections
+        }
+    return {
+        f"{document}::{module}" if query.relevant_documents else module
+        for document in documents
+        for module in modules
+    }
+
+
 def evaluate_results(
     eval_queries: list[EvalQuery],
     search_fn: Callable[[str, int], list[SearchResult]],
@@ -153,25 +186,14 @@ def evaluate_results(
         results = search_fn(q.query, k)
 
         if require_section:
-            retrieved_ids = _dedupe_preserve_order([r.chunk.chunk_id for r in results])
-            relevant_ids = {
-                c.chunk_id for c in corpus_chunks if is_relevant(c, q, require_section=True)
-            }
-            if not relevant_ids:
-                raise ValueError(
-                    f"No gold chunk exists for strict query '{q.query}'. "
-                    "Check relevant module, section and document labels."
-                )
-        else:
-            # Relaxed evaluation asks: did the retriever find the right module
-            # or, for document-level queries, the right handbook?
             retrieved_ids = _dedupe_preserve_order(
-                [
-                    (r.chunk.module_code or _chunk_document_name(r.chunk)).upper()
-                    for r in results
-                ]
+                [_section_eval_key(result.chunk, q) for result in results]
             )
-            relevant_ids = q.relevant_modules or {name.upper() for name in q.relevant_documents}
+        else:
+            retrieved_ids = _dedupe_preserve_order(
+                [_module_eval_key(result.chunk, q) for result in results]
+            )
+        relevant_ids = _gold_eval_keys(q, require_section)
 
         precision_scores.append(precision_at_k(retrieved_ids, relevant_ids, k))
         recall_scores.append(recall_at_k(retrieved_ids, relevant_ids, k))
@@ -192,6 +214,45 @@ def evaluate_results(
         f"ndcg@{k}": sum(ndcg_scores) / n,
         "hit@1": sum(hit1_scores) / n,
     }
+
+
+def evaluate_per_query(
+    eval_queries: list[EvalQuery],
+    search_fn: Callable[[str, int], list[SearchResult]],
+    k: int = 5,
+    require_section: bool = False,
+) -> list[dict[str, str | int]]:
+    """Return an auditable row for every query and its first relevant rank."""
+
+    rows: list[dict[str, str | int]] = []
+    for query in eval_queries:
+        results = search_fn(query.query, k)
+        first_rank = next(
+            (
+                result.rank
+                for result in results
+                if is_relevant(result.chunk, query, require_section=require_section)
+            ),
+            None,
+        )
+        top = results[0].chunk if results else None
+        rows.append(
+            {
+                "query_id": query.query_id,
+                "query_type": query.query_type,
+                "query": query.query,
+                "matching": "module+section" if require_section else "module",
+                "expected_document": ";".join(sorted(query.relevant_documents)),
+                "expected_module": ";".join(sorted(query.relevant_modules)),
+                "expected_section": ";".join(sorted(query.relevant_sections)),
+                "top1_document": _chunk_document_name(top) if top else "",
+                "top1_module": (top.module_code or "") if top else "",
+                "top1_section": (top.section or "") if top else "",
+                "first_relevant_rank": first_rank if first_rank is not None else "",
+                "result": "gefunden" if first_rank is not None else "nicht gefunden",
+            }
+        )
+    return rows
 
 
 def evaluate_by_query_type(

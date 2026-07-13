@@ -126,6 +126,8 @@ python -m modulehandbook_rag.cli evaluate \
 
 Ein Beispiel für dokumentierte Ergebnisdateien liegt unter `outputs/`.
 
+Die abschließende, methodisch getrennte Auswertung steht in [`docs/final_evaluation.md`](docs/final_evaluation.md). Reproduzierbare Rohwerte, Fragetyp-Auswertungen und die Per-Query-Fehleranalyse liegen unter `outputs/final_evaluation/`.
+
 ## Korpusauswahl
 
 Wenn mehrere Modulhandbücher infrage kommen, kann das Korpus in der App explizit ausgewählt werden. Zusätzlich enthält die App eine automatische Auswahl, die Studiengang, Abschluss und Varianten wie Nebenfach oder Studienbeginn aus der Anfrage ableitet, sofern diese Informationen genannt werden.
@@ -134,7 +136,7 @@ Ohne eindeutige Angabe wird ein Standardkorpus verwendet, der Computerlinguistik
 
 ## Mehrsprachige Suche
 
-BM25 arbeitet lexikalisch und ist besonders stark, wenn die Anfrage deutsche Begriffe aus dem Modulhandbuch enthält. Dense Retrieval nutzt mehrsprachige Satzrepräsentationen. Hybrid Retrieval kombiniert beide Ansätze und ist deshalb die robusteste Option für frei formulierte oder mehrsprachige Fragen.
+BM25 arbeitet lexikalisch und ist besonders stark, wenn die Anfrage deutsche Begriffe aus dem Modulhandbuch enthält. Dense Retrieval nutzt mehrsprachige Satzrepräsentationen. Hybrid Retrieval kombiniert beide Ansätze. In der abschließenden mehrsprachigen Evaluation erzielt `alpha = 0,25` auf 18 kontrollierten Fragen die beste Gesamtleistung. Dieser Wert ist eine datensatzbezogene Beobachtung und keine allgemeine Systemeigenschaft.
 
 ## Limitationen
 
