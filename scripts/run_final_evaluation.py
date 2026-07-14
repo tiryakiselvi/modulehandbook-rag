@@ -183,15 +183,18 @@ def main() -> None:
             )
 
     best_bm25 = BM25Retriever(field, section_boost=8.0, use_query_expansion=True)
-    hybrid.alpha = 0.5
-    for system_name, retriever, queries, query_set in (
-        ("BM25_domain", best_bm25, german, "Deutsch n=25"),
-        ("Dense", dense, german, "Deutsch n=25"),
-        ("Hybrid_alpha_0.50", hybrid, german, "Deutsch n=25"),
-        ("BM25_domain", best_bm25, multilingual, "Mehrsprachig n=18"),
-        ("Dense", dense, multilingual, "Mehrsprachig n=18"),
-        ("Hybrid_alpha_0.50", hybrid, multilingual, "Mehrsprachig n=18"),
+    for system_name, retriever, queries, query_set, alpha_override in (
+        ("BM25_domain", best_bm25, german, "Deutsch n=25", None),
+        ("Dense", dense, german, "Deutsch n=25", None),
+        ("Hybrid_alpha_0.25", hybrid, german, "Deutsch n=25", 0.25),
+        ("Hybrid_alpha_0.50", hybrid, german, "Deutsch n=25", 0.50),
+        ("BM25_domain", best_bm25, multilingual, "Mehrsprachig n=18", None),
+        ("Dense", dense, multilingual, "Mehrsprachig n=18", None),
+        ("Hybrid_alpha_0.25", hybrid, multilingual, "Mehrsprachig n=18", 0.25),
+        ("Hybrid_alpha_0.50", hybrid, multilingual, "Mehrsprachig n=18", 0.50),
     ):
+        if alpha_override is not None:
+            hybrid.alpha = alpha_override
         for row in evaluate_per_query(queries, retriever.search, k=3, require_section=True):
             detail_rows.append({"query_set": query_set, "system": system_name, **row})
         grouped = evaluate_by_query_type(
