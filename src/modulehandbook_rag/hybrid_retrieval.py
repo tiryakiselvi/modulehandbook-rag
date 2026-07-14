@@ -15,6 +15,13 @@ def _normalize(scores: dict[str, float]) -> dict[str, float]:
     return {k: (v - lo) / (hi - lo) for k, v in scores.items()}
 
 
+def _rank_combined_scores(
+    combined: dict[str, float], top_k: int
+) -> list[tuple[str, float]]:
+    """Rank scores reproducibly, including exact-score ties."""
+    return sorted(combined.items(), key=lambda item: (-item[1], item[0]))[:top_k]
+
+
 class HybridRetriever:
     def __init__(
         self,
@@ -54,7 +61,7 @@ class HybridRetriever:
             + (1 - self.alpha) * bm25_scores.get(cid, 0.0)
             for cid in ids
         }
-        ranked = sorted(combined.items(), key=lambda x: x[1], reverse=True)[:top_k]
+        ranked = _rank_combined_scores(combined, top_k)
 
         return [
             SearchResult(chunk=self.by_id[cid], score=float(score), rank=rank + 1)

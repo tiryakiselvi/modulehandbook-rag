@@ -15,7 +15,7 @@ Dieses Projekt vergleicht deshalb unterschiedliche Chunking- und Retrieval-Strat
 - Dense Retrieval
 - Hybrid Retrieval
 
-Die Anwendung kann Fragen auf Deutsch, Englisch und Türkisch verarbeiten. Da die Modulhandbücher selbst deutsch sind, ist BM25 besonders stark bei deutschen Anfragen. Für englische und türkische Fragen sind Dense Retrieval oder Hybrid Retrieval besser geeignet.
+Die Anwendung kann Fragen auf Deutsch, Englisch und Türkisch verarbeiten. In der kontrollierten mehrsprachigen Evaluation bleibt BM25 wegen Modulcodes, Feldnamen und Query Expansion bereits stark. Dense Retrieval allein ist schwächer; die beste Gesamtleistung erzielt Hybrid Retrieval mit einem moderaten Dense-Anteil.
 
 ## Projektstruktur
 
@@ -127,6 +127,8 @@ python -m modulehandbook_rag.cli evaluate \
 Ein Beispiel für dokumentierte Ergebnisdateien liegt unter `outputs/`.
 
 Die abschließende, methodisch getrennte Auswertung steht in [`docs/final_evaluation.md`](docs/final_evaluation.md). Reproduzierbare Rohwerte, Fragetyp-Auswertungen und die Per-Query-Fehleranalyse liegen unter `outputs/final_evaluation/`.
+
+Für den vollständig dokumentierten Release-Lauf unter Windows steht zusätzlich [`docs/TEST_RUNBOOK.md`](docs/TEST_RUNBOOK.md) bereit. Die dafür verwendeten direkten Paketversionen sind in `requirements-release.txt` festgehalten.
 
 ## Korpusauswahl
 

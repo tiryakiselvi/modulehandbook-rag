@@ -43,10 +43,10 @@ Module-Chunking ist für die Aufgabe „richtiges Modul finden“ am stärksten.
 | BM25 mit Expansion und Section Boost | – | 0,680 | 0,780 | 0,733 | 0,735 |
 | Dense | – | 0,280 | 0,400 | 0,340 | 0,353 |
 | Hybrid | 0,25 | **0,720** | 0,880 | **0,813** | **0,823** |
-| Hybrid | 0,50 | 0,600 | **0,900** | 0,747 | 0,786 |
+| Hybrid | 0,50 | 0,640 | **0,900** | 0,760 | 0,796 |
 | Hybrid | 0,75 | 0,320 | 0,640 | 0,473 | 0,519 |
 
-Hybrid `alpha = 0,25` liefert die beste Rangqualität. `alpha = 0,50` erreicht den höchsten Recall@3. Ein hoher Dense-Anteil verschlechtert das Ergebnis auf diesem kleinen, stark strukturierten Korpus.
+Hybrid `alpha = 0,25` liefert die beste Rangqualität. `alpha = 0,50` erreicht den höchsten Recall@3. Ein hoher Dense-Anteil verschlechtert das Ergebnis auf diesem kleinen, stark strukturierten Korpus. Bei exakt gleichen Fusionsscores entscheidet die Chunk-ID als stabiler zweiter Sortierschlüssel; damit ist die Rangfolge auch über getrennte Python-Prozesse reproduzierbar.
 
 ## BM25-Ablation
 
@@ -92,4 +92,4 @@ Der Pilot belegt das Verhalten nur für sechs kontrollierte Fragen. Er ersetzt k
 - Late-Chunking ist nicht Bestandteil der aktuellen Pipeline. Die Metadatenzuordnung erfolgt deterministisch über Modul- und Abschnittsgrenzen; Late-Chunking wäre eine zusätzliche Embedding-Ablation.
 - Exakte Felder werden bereits strukturiert aus Field-Chunks aufgelöst. Ein separater persistenter Faktenindex wäre eine weiterführende Erweiterung.
 
-Die vollständigen Rohwerte, Fragetyp-Auswertungen, Per-Query-Fehleranalyse und Integritätsprüfung liegen unter `outputs/final_evaluation/`.
+Die vollständigen Rohwerte, Fragetyp-Auswertungen, Per-Query-Fehleranalyse und Integritätsprüfung des Abgabelaufs liegen unter `outputs/final_release/`.
