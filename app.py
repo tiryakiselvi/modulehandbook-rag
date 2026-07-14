@@ -379,14 +379,14 @@ with st.sidebar:
         index=0,
     )
     retriever_choice = segmented("Retriever", ["Auto", "BM25", "Dense", "Hybrid"], "Auto")
-    top_k = st.slider("Evidence chunks", 1, 8, 4)
+    top_k = st.slider("Evidence chunks", 1, 8, 3)
     section_boost = st.slider("Section Boost", 0.0, 12.0, 8.0, 0.5)
     query_expansion = st.toggle("Query Expansion", value=True)
-    alpha = st.slider("Hybrid Dense-Gewicht", 0.0, 1.0, 0.55, 0.05)
+    alpha = st.slider("Hybrid Dense-Gewicht", 0.0, 1.0, 0.25, 0.05)
 
     st.markdown("### Antwort")
     answer_mode = st.radio("Antwortmodus", ["Evidence summary", "Ollama LLM answer"], index=0)
-    model = st.text_input("Ollama-Modell", value="llama3.1:8b")
+    model = st.text_input("Ollama-Modell", value="llama3.2:3b")
 
 chunks = load_chunks(chunk_file)
 

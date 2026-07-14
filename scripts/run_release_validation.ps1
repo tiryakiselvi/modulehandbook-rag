@@ -16,10 +16,10 @@ $env:HF_HUB_OFFLINE = "1"
 $env:TRANSFORMERS_OFFLINE = "1"
 $env:PYTHONHASHSEED = "0"
 
-Write-Host "[1/3] Automatisierte Tests"
+Write-Host "[1/4] Automatisierte Tests"
 & $python -m pytest -q
 
-Write-Host "[2/3] Retrieval-Evaluation"
+Write-Host "[2/4] Retrieval-Evaluation"
 & $python -B scripts\run_final_evaluation.py --out $OutputDirectory
 
 if (-not $SkipLlmPilot) {
@@ -27,7 +27,7 @@ if (-not $SkipLlmPilot) {
     if (-not ($tags.models.name -contains "llama3.2:3b")) {
         throw "Ollama-Modell llama3.2:3b ist nicht lokal verfügbar."
     }
-    Write-Host "[3/3] Kontrollierter Antwortpilot"
+    Write-Host "[3/4] Kontrollierter Antwortpilot"
     & $python -B scripts\run_llm_behavior_evaluation.py `
         --results $OutputDirectory `
         --model "llama3.2:3b" `
@@ -35,7 +35,10 @@ if (-not $SkipLlmPilot) {
         --seed 42
 }
 else {
-    Write-Host "[3/3] Antwortpilot übersprungen"
+    Write-Host "[3/4] Antwortpilot übersprungen"
 }
+
+Write-Host "[4/4] Lokale Demo-Daten"
+& (Join-Path $PSScriptRoot "prepare_demo_data.ps1") -SourceDirectory $OutputDirectory
 
 Write-Host "Release-Validierung abgeschlossen: $OutputDirectory"

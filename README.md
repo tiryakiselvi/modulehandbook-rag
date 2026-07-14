@@ -80,6 +80,15 @@ python -m modulehandbook_rag.cli ingest data/raw \
   --out data/processed/chunks_naive.jsonl
 ```
 
+Nach einem vollständigen Release-Lauf können die bereits geprüften Vollkorpus-Chunks
+direkt als lokale Demo-Daten bereitgestellt werden:
+
+```powershell
+.\scripts\prepare_demo_data.ps1 -SourceDirectory "outputs\final_release"
+```
+
+Damit verwendet die Oberfläche exakt die Chunk-Dateien des dokumentierten Abgabelaufs.
+
 ## Streamlit-App starten
 
 ```bash
@@ -126,7 +135,7 @@ python -m modulehandbook_rag.cli evaluate \
 
 Ein Beispiel für dokumentierte Ergebnisdateien liegt unter `outputs/`.
 
-Die abschließende, methodisch getrennte Auswertung steht in [`docs/final_evaluation.md`](docs/final_evaluation.md). Reproduzierbare Rohwerte, Fragetyp-Auswertungen und die Per-Query-Fehleranalyse liegen unter `outputs/final_evaluation/`.
+Die abschließende, methodisch getrennte Auswertung steht in [`docs/final_evaluation.md`](docs/final_evaluation.md). Reproduzierbare Rohwerte, Fragetyp-Auswertungen und die Per-Query-Fehleranalyse liegen unter `outputs/final_release/`.
 
 Für den vollständig dokumentierten Release-Lauf unter Windows steht zusätzlich [`docs/TEST_RUNBOOK.md`](docs/TEST_RUNBOOK.md) bereit. Die dafür verwendeten direkten Paketversionen sind in `requirements-release.txt` festgehalten.
 

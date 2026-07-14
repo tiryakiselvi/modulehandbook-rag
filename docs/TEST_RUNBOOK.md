@@ -2,7 +2,7 @@
 
 ## Zweck
 
-Dieses Runbook erzeugt den dokumentierten Abgabestand aus dem Repository neu. Es prüft zuerst den Code, erstellt danach alle Retrieval- und Korpusdateien und führt abschließend den kontrollierten Antwortpilot aus. Die Evaluation verwendet ausschließlich lokale PDF-, Modell- und Ollama-Dateien.
+Dieses Runbook erzeugt den dokumentierten Abgabestand aus dem Repository neu. Es prüft zuerst den Code, erstellt danach alle Retrieval- und Korpusdateien, führt den kontrollierten Antwortpilot aus und stellt zuletzt die geprüften Vollkorpus-Chunks für die lokale Demo bereit. Die Evaluation verwendet ausschließlich lokale PDF-, Modell- und Ollama-Dateien.
 
 ## Geltungsbereich
 
@@ -68,6 +68,13 @@ Zentrale Retrievalwerte:
 - `metadata.json`: Commit, Python-Version, Modell und Korpora
 - `chunks/`: neun reproduzierte Chunk-Dateien
 - `llm_behavior/`: 18 Pilotausgaben und Zusammenfassung
+
+Zusätzlich werden für die Streamlit-Demo aus denselben Release-Chunks erzeugt:
+
+- `data/processed/chunks_field.jsonl`
+- `data/processed/chunks_module.jsonl`
+- `data/processed/chunks_naive.jsonl`
+- `data/processed/chunks.jsonl` als kompatibler Field-Standard
 
 ## Schnelle Validierung ohne Ollama
 
