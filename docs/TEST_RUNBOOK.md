@@ -42,7 +42,7 @@ Erwartete Laufzeit auf dem Abgaberechner: ungefähr zwei Minuten. Der Dense-Teil
 
 ## Erwartete Prüfresultate
 
-- `12 passed`
+- `13 passed`
 - 0 doppelte Chunk-IDs in allen neun Corpus-/Chunking-Kombinationen
 - 3.391 eindeutige Field-Chunks im Sieben-PDF-Stresstest
 - Antwortpilot: Verhaltensgenauigkeit `1,000`, exakte Reproduzierbarkeit `1,000`

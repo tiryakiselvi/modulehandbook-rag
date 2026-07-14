@@ -221,20 +221,41 @@ def evaluate_per_query(
     search_fn: Callable[[str, int], list[SearchResult]],
     k: int = 5,
     require_section: bool = False,
-) -> list[dict[str, str | int]]:
-    """Return an auditable row for every query and its first relevant rank."""
+) -> list[dict[str, str | int | float]]:
+    """Return auditable per-query metrics using the aggregate metric units."""
 
-    rows: list[dict[str, str | int]] = []
+    rows: list[dict[str, str | int | float]] = []
     for query in eval_queries:
         results = search_fn(query.query, k)
+        if require_section:
+            retrieved_ids = _dedupe_preserve_order(
+                [_section_eval_key(result.chunk, query) for result in results]
+            )
+        else:
+            retrieved_ids = _dedupe_preserve_order(
+                [_module_eval_key(result.chunk, query) for result in results]
+            )
+        relevant_ids = _gold_eval_keys(query, require_section)
+        relevant_found = sum(item in relevant_ids for item in retrieved_ids[:k])
         first_rank = next(
             (
-                result.rank
-                for result in results
-                if is_relevant(result.chunk, query, require_section=require_section)
+                rank
+                for rank, item in enumerate(retrieved_ids, start=1)
+                if item in relevant_ids
             ),
             None,
         )
+        query_precision = precision_at_k(retrieved_ids, relevant_ids, k)
+        query_recall = recall_at_k(retrieved_ids, relevant_ids, k)
+        query_mrr = mrr(retrieved_ids, relevant_ids)
+        query_ndcg = ndcg_at_k(retrieved_ids, relevant_ids, k)
+        query_hit1 = 1.0 if retrieved_ids and retrieved_ids[0] in relevant_ids else 0.0
+        if query_recall == 1.0:
+            result_label = "vollständig"
+        elif relevant_found:
+            result_label = "teilweise"
+        else:
+            result_label = "nicht gefunden"
         top = results[0].chunk if results else None
         rows.append(
             {
@@ -249,7 +270,16 @@ def evaluate_per_query(
                 "top1_module": (top.module_code or "") if top else "",
                 "top1_section": (top.section or "") if top else "",
                 "first_relevant_rank": first_rank if first_rank is not None else "",
-                "result": "gefunden" if first_rank is not None else "nicht gefunden",
+                "relevant_keys": " | ".join(sorted(relevant_ids)),
+                f"retrieved_keys@{k}": " | ".join(retrieved_ids[:k]),
+                "relevant_total": len(relevant_ids),
+                f"relevant_found@{k}": relevant_found,
+                f"precision@{k}": query_precision,
+                f"recall@{k}": query_recall,
+                "reciprocal_rank": query_mrr,
+                f"ndcg@{k}": query_ndcg,
+                "hit@1": query_hit1,
+                "result": result_label,
             }
         )
     return rows
