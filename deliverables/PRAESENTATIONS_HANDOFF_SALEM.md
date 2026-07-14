@@ -25,7 +25,7 @@ Zahlenquelle verwendet werden.
 | 12 | Ergebnisse | Zeilen 29–33 | BM25-Ablation; Hit@1 versus Recall@3 |
 | 13 | Ergebnisse | Zeilen 11–17 | Hybrid α=0,25 versus α=0,50 |
 | 15 | Ergebnisse | Zeilen 20–26 | mehrsprachige Retriever |
-| 16 | Fehleranalyse | Zeilen 16–27 | q12, q10, q07; Hit@1 und Recall gemeinsam lesen |
+| 16 | Fehleranalyse | Zeilen 16–27 | q12, q10, q07; Goldfeld, Top-1-Feld und Status vergleichen |
 | 16 | Korpus | Zeilen 18–20 | sieben PDFs, 3.391 Field Chunks, null Duplikate |
 | 17 | Antwortpilot | Zeilen 4–7 und 15–21 | sechs Fragen, 18 Runs |
 | 21 | Reproduktion | Zeilen 4–12 und 32–36 | Commit, Hashes, Befehl, Offline-Hinweis |
@@ -37,7 +37,7 @@ Zahlenquelle verwendet werden.
 - Deutsch strict, Hybrid α=0,50: Hit@1 = 0,640; Recall@3 = 0,900
 - Mehrsprachig strict, Hybrid α=0,25: Hit@1 = 0,833; Recall@3 = 1,000
 - Mehrsprachig strict, BM25: Hit@1 = 0,667; Recall@3 = 0,944
-- Stresstest: 7 PDFs; 3.391 Field Chunks; 0 doppelte IDs
+- Stresstest: 7 PDFs; 3.391 Field Chunks
 - Antwortpilot: 6 Fragen × 3; 100% Verhaltensrichtigkeit; 100% exakte Reproduzierbarkeit
 - Tests: 13/13
 
