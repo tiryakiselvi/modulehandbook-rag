@@ -1,0 +1,9 @@
+{
+  "model": "llama3.2:3b",
+  "temperature": 0.0,
+  "seed": 42,
+  "repeats": 3,
+  "queries": 6,
+  "behavior_accuracy": 1.0,
+  "exact_reproducibility": 1.0
+}

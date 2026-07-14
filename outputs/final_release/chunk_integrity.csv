@@ -1,0 +1,10 @@
+corpus,documents,chunking,chunks,unique_chunk_ids,duplicate_chunk_ids,chunks_without_module
+official_cl_bsc,1,naive,62,62,0,1
+official_cl_bsc,1,module,17,17,0,0
+official_cl_bsc,1,field,307,307,0,0
+curated_main,4,naive,578,578,0,4
+curated_main,4,module,146,146,0,0
+curated_main,4,field,1990,1990,0,0
+stress_all_variants,7,naive,937,937,0,7
+stress_all_variants,7,module,239,239,0,0
+stress_all_variants,7,field,3391,3391,0,0

@@ -1,0 +1,79 @@
+query_id,category,query,expected_behavior,repeat,observed_behavior,behavior_correct,answer,retrieved_sources,exactly_reproducible
+a01,answerable,Wie viele ECTS hat WP3 Information Retrieval?,answer,1,answer,True,"WP3 Information Retrieval umfasst 9 ECTS-Punkte. (Quelle 1)
+
+Gefundene Quellen:
+- WP3 | Information Retrieval | Abschnitt: Zugeordnete Modulteile | Seite 33
+- P13 | Abschlussmodul | Abschnitt: Zugeordnete Modulteile | Seite 27
+- P11 | Informationsextraktion | Abschnitt: Zugeordnete Modulteile | Seite 23",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:WP3:Zugeordnete Modulteile; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P13:Zugeordnete Modulteile; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P11:Zugeordnete Modulteile,True
+a01,answerable,Wie viele ECTS hat WP3 Information Retrieval?,answer,2,answer,True,"WP3 Information Retrieval umfasst 9 ECTS-Punkte. (Quelle 1)
+
+Gefundene Quellen:
+- WP3 | Information Retrieval | Abschnitt: Zugeordnete Modulteile | Seite 33
+- P13 | Abschlussmodul | Abschnitt: Zugeordnete Modulteile | Seite 27
+- P11 | Informationsextraktion | Abschnitt: Zugeordnete Modulteile | Seite 23",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:WP3:Zugeordnete Modulteile; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P13:Zugeordnete Modulteile; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P11:Zugeordnete Modulteile,True
+a01,answerable,Wie viele ECTS hat WP3 Information Retrieval?,answer,3,answer,True,"WP3 Information Retrieval umfasst 9 ECTS-Punkte. (Quelle 1)
+
+Gefundene Quellen:
+- WP3 | Information Retrieval | Abschnitt: Zugeordnete Modulteile | Seite 33
+- P13 | Abschlussmodul | Abschnitt: Zugeordnete Modulteile | Seite 27
+- P11 | Informationsextraktion | Abschnitt: Zugeordnete Modulteile | Seite 23",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:WP3:Zugeordnete Modulteile; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P13:Zugeordnete Modulteile; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P11:Zugeordnete Modulteile,True
+a02,answerable,Wer ist für P10 Statistische Methoden in der Sprachverarbeitung verantwortlich?,answer,1,answer,True,"Modulverantwortliche/r: PD Dr. Helmut Schmid (Quelle 1)
+
+Gefundene Quellen:
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: Modulverantwortliche/r | Seite 21
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: header | Seite 21
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: Wahlpflichtregelungen | Seite 21",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:Modulverantwortliche/r; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:header; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:Wahlpflichtregelungen,True
+a02,answerable,Wer ist für P10 Statistische Methoden in der Sprachverarbeitung verantwortlich?,answer,2,answer,True,"Modulverantwortliche/r: PD Dr. Helmut Schmid (Quelle 1)
+
+Gefundene Quellen:
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: Modulverantwortliche/r | Seite 21
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: header | Seite 21
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: Wahlpflichtregelungen | Seite 21",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:Modulverantwortliche/r; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:header; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:Wahlpflichtregelungen,True
+a02,answerable,Wer ist für P10 Statistische Methoden in der Sprachverarbeitung verantwortlich?,answer,3,answer,True,"Modulverantwortliche/r: PD Dr. Helmut Schmid (Quelle 1)
+
+Gefundene Quellen:
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: Modulverantwortliche/r | Seite 21
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: header | Seite 21
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: Wahlpflichtregelungen | Seite 21",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:Modulverantwortliche/r; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:header; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:Wahlpflichtregelungen,True
+u01,unsupported,An welchem Datum findet die nächste Prüfung für WP3 Information Retrieval statt?,abstain,1,abstain,True,"Diese Information ist im bereitgestellten Kontext nicht enthalten.
+
+Gefundene Quellen:
+- WP3 | Information Retrieval | Abschnitt: Form der Modulprüfung | Seite 33
+- P1 | Einführung in die Programmierung | Abschnitt: Form der Modulprüfung | Seite 3
+- P2 | Einführung in die Computerlinguistik | Abschnitt: Form der Modulprüfung | Seite 5",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:WP3:Form der Modulprüfung; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P1:Form der Modulprüfung; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P2:Form der Modulprüfung,True
+u01,unsupported,An welchem Datum findet die nächste Prüfung für WP3 Information Retrieval statt?,abstain,2,abstain,True,"Diese Information ist im bereitgestellten Kontext nicht enthalten.
+
+Gefundene Quellen:
+- WP3 | Information Retrieval | Abschnitt: Form der Modulprüfung | Seite 33
+- P1 | Einführung in die Programmierung | Abschnitt: Form der Modulprüfung | Seite 3
+- P2 | Einführung in die Computerlinguistik | Abschnitt: Form der Modulprüfung | Seite 5",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:WP3:Form der Modulprüfung; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P1:Form der Modulprüfung; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P2:Form der Modulprüfung,True
+u01,unsupported,An welchem Datum findet die nächste Prüfung für WP3 Information Retrieval statt?,abstain,3,abstain,True,"Diese Information ist im bereitgestellten Kontext nicht enthalten.
+
+Gefundene Quellen:
+- WP3 | Information Retrieval | Abschnitt: Form der Modulprüfung | Seite 33
+- P1 | Einführung in die Programmierung | Abschnitt: Form der Modulprüfung | Seite 3
+- P2 | Einführung in die Computerlinguistik | Abschnitt: Form der Modulprüfung | Seite 5",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:WP3:Form der Modulprüfung; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P1:Form der Modulprüfung; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P2:Form der Modulprüfung,True
+u02,unsupported,Wie lautet die E-Mail-Adresse der für P10 verantwortlichen Person?,abstain,1,abstain,True,"Diese Information ist im bereitgestellten Kontext nicht enthalten. (Quelle 1)
+
+Gefundene Quellen:
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: Modulverantwortliche/r | Seite 21
+- P1 | Einführung in die Programmierung | Abschnitt: Modulverantwortliche/r | Seite 3
+- P2 | Einführung in die Computerlinguistik | Abschnitt: Modulverantwortliche/r | Seite 5",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:Modulverantwortliche/r; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P1:Modulverantwortliche/r; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P2:Modulverantwortliche/r,True
+u02,unsupported,Wie lautet die E-Mail-Adresse der für P10 verantwortlichen Person?,abstain,2,abstain,True,"Diese Information ist im bereitgestellten Kontext nicht enthalten. (Quelle 1)
+
+Gefundene Quellen:
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: Modulverantwortliche/r | Seite 21
+- P1 | Einführung in die Programmierung | Abschnitt: Modulverantwortliche/r | Seite 3
+- P2 | Einführung in die Computerlinguistik | Abschnitt: Modulverantwortliche/r | Seite 5",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:Modulverantwortliche/r; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P1:Modulverantwortliche/r; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P2:Modulverantwortliche/r,True
+u02,unsupported,Wie lautet die E-Mail-Adresse der für P10 verantwortlichen Person?,abstain,3,abstain,True,"Diese Information ist im bereitgestellten Kontext nicht enthalten. (Quelle 1)
+
+Gefundene Quellen:
+- P10 | Statistische Methoden in der Sprachverarbeitung | Abschnitt: Modulverantwortliche/r | Seite 21
+- P1 | Einführung in die Programmierung | Abschnitt: Modulverantwortliche/r | Seite 3
+- P2 | Einführung in die Computerlinguistik | Abschnitt: Modulverantwortliche/r | Seite 5",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P10:Modulverantwortliche/r; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P1:Modulverantwortliche/r; lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P2:Modulverantwortliche/r,True
+c01,ambiguous,Wie viele ECTS hat P1?,clarify,1,clarify,True,"Bitte präzisieren Sie den Studiengang oder das Modulhandbuch, da derselbe Modulcode in mehreren Handbüchern vorkommt.",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P1:Zugeordnete Modulteile; lmu_computerlinguistik_msc_stand_2025-07-08.pdf:P1:Zugeordnete Modulteile; lmu_informatik_bsc_integriertes_anwendungsfach_stand_2023-11-22.pdf:P1:Zugeordnete Modulteile,True
+c01,ambiguous,Wie viele ECTS hat P1?,clarify,2,clarify,True,"Bitte präzisieren Sie den Studiengang oder das Modulhandbuch, da derselbe Modulcode in mehreren Handbüchern vorkommt.",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P1:Zugeordnete Modulteile; lmu_computerlinguistik_msc_stand_2025-07-08.pdf:P1:Zugeordnete Modulteile; lmu_informatik_bsc_integriertes_anwendungsfach_stand_2023-11-22.pdf:P1:Zugeordnete Modulteile,True
+c01,ambiguous,Wie viele ECTS hat P1?,clarify,3,clarify,True,"Bitte präzisieren Sie den Studiengang oder das Modulhandbuch, da derselbe Modulcode in mehreren Handbüchern vorkommt.",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:P1:Zugeordnete Modulteile; lmu_computerlinguistik_msc_stand_2025-07-08.pdf:P1:Zugeordnete Modulteile; lmu_informatik_bsc_integriertes_anwendungsfach_stand_2023-11-22.pdf:P1:Zugeordnete Modulteile,True
+c02,ambiguous,Wer ist für WP3 verantwortlich?,clarify,1,clarify,True,"Bitte präzisieren Sie den Studiengang oder das Modulhandbuch, da derselbe Modulcode in mehreren Handbüchern vorkommt.",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:WP3:Modulverantwortliche/r; lmu_informatik_bsc_integriertes_anwendungsfach_stand_2023-11-22.pdf:WP3:Modulverantwortliche/r; lmu_informatik_msc_beginn_wise_stand_2023-01-20.pdf:WP3:Modulverantwortliche/r,True
+c02,ambiguous,Wer ist für WP3 verantwortlich?,clarify,2,clarify,True,"Bitte präzisieren Sie den Studiengang oder das Modulhandbuch, da derselbe Modulcode in mehreren Handbüchern vorkommt.",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:WP3:Modulverantwortliche/r; lmu_informatik_bsc_integriertes_anwendungsfach_stand_2023-11-22.pdf:WP3:Modulverantwortliche/r; lmu_informatik_msc_beginn_wise_stand_2023-01-20.pdf:WP3:Modulverantwortliche/r,True
+c02,ambiguous,Wer ist für WP3 verantwortlich?,clarify,3,clarify,True,"Bitte präzisieren Sie den Studiengang oder das Modulhandbuch, da derselbe Modulcode in mehreren Handbüchern vorkommt.",lmu_computerlinguistik_bsc_stand_2025-09-24.pdf:WP3:Modulverantwortliche/r; lmu_informatik_bsc_integriertes_anwendungsfach_stand_2023-11-22.pdf:WP3:Modulverantwortliche/r; lmu_informatik_msc_beginn_wise_stand_2023-01-20.pdf:WP3:Modulverantwortliche/r,True
