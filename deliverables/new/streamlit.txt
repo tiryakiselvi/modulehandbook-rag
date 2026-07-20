@@ -1,0 +1,4 @@
+cd C:\Users\ASUS\Desktop\modulehandbook-rag
+.\.venv\Scripts\python.exe -m streamlit run app.py
+
+http://localhost:8501/

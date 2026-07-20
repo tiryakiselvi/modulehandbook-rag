@@ -180,6 +180,96 @@ input[aria-label="Frage"] {
   background: rgba(255,255,255,.72);
 }
 [data-testid="stMetricValue"] { letter-spacing: -0.04em; }
+/* Presentation safety: Streamlit/browser dark themes can make labels white on
+   our light custom surface. Force readable text for all visible controls. */
+[data-testid="stSidebar"],
+[data-testid="stSidebar"] *,
+[data-testid="stWidgetLabel"],
+[data-testid="stWidgetLabel"] *,
+[data-testid="stMarkdownContainer"],
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMetric"],
+[data-testid="stMetric"] * {
+  color: var(--ink) !important;
+  opacity: 1 !important;
+}
+[data-testid="stSidebar"] .stCaptionContainer,
+[data-testid="stSidebar"] .stCaptionContainer *,
+.tiny-note,
+.source-line {
+  color: var(--muted) !important;
+  opacity: 1 !important;
+}
+[data-testid="stTextInput"] input,
+.stTextInput input,
+textarea {
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+  opacity: 1 !important;
+}
+[data-testid="stTextInput"] input::placeholder,
+.stTextInput input::placeholder,
+textarea::placeholder {
+  color: #6f7890 !important;
+  -webkit-text-fill-color: #6f7890 !important;
+  opacity: 1 !important;
+}
+.stSelectbox div[data-baseweb="select"] *,
+.stMultiSelect div[data-baseweb="select"] * {
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+  opacity: 1 !important;
+}
+/* BaseWeb controls may keep a dark inherited background in presentation mode.
+   Force select boxes, dropdown menus and expanders back to the light deck style. */
+.stSelectbox div[data-baseweb="select"],
+.stSelectbox div[data-baseweb="select"] > div,
+.stMultiSelect div[data-baseweb="select"],
+.stMultiSelect div[data-baseweb="select"] > div {
+  background: #ffffff !important;
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+  border-color: rgba(95,124,255,.24) !important;
+}
+div[data-baseweb="popover"],
+div[data-baseweb="popover"] *,
+ul[role="listbox"],
+ul[role="listbox"] *,
+li[role="option"],
+li[role="option"] * {
+  background: #ffffff !important;
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+  opacity: 1 !important;
+}
+li[role="option"]:hover,
+li[role="option"][aria-selected="true"] {
+  background: #eef2ff !important;
+}
+[data-testid="stExpander"],
+[data-testid="stExpander"] details,
+[data-testid="stExpander"] summary,
+[data-testid="stExpander"] summary *,
+.streamlit-expanderHeader,
+.streamlit-expanderHeader * {
+  background: rgba(255,255,255,.88) !important;
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+  opacity: 1 !important;
+}
+[data-testid="stExpander"] {
+  border: 1px solid rgba(95,124,255,.12) !important;
+  border-radius: 16px !important;
+}
+[data-testid="stRadio"] label,
+[data-testid="stRadio"] label *,
+[data-testid="stSegmentedControl"] *,
+[data-testid="stBaseButton-secondary"],
+[data-testid="stBaseButton-secondary"] * {
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+  opacity: 1 !important;
+}
 hr { border: none; height: 1px; background: var(--line); margin: 1.15rem 0; }
 </style>
 """
@@ -215,11 +305,8 @@ LANGUAGE_NOTES = {
 
 
 def segmented(label: str, options: list[str], default: str) -> str:
-    if hasattr(st, "segmented_control"):
-        value = st.segmented_control(label, options, default=default)  # type: ignore[attr-defined]
-        return value or default
     index = options.index(default) if default in options else 0
-    return st.radio(label, options, index=index, horizontal=True)
+    return st.radio(label, options, index=index)
 
 
 @st.cache_data(show_spinner=False)
@@ -368,7 +455,7 @@ with st.sidebar:
     st.caption(LANGUAGE_NOTES[language_hint])
 
     st.markdown("### Retrieval")
-    chunk_file = st.selectbox(
+    chunk_file = st.radio(
         "Chunk-Datei",
         [
             "data/processed/chunks_field.jsonl",
@@ -377,6 +464,7 @@ with st.sidebar:
             "data/processed/chunks.jsonl",
         ],
         index=0,
+        format_func=lambda path: path.replace("data/processed/", ""),
     )
     retriever_choice = segmented("Retriever", ["Auto", "BM25", "Dense", "Hybrid"], "Auto")
     top_k = st.slider("Evidence chunks", 1, 8, 3)
